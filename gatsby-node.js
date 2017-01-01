@@ -3,9 +3,17 @@ const crypto = require('crypto')
 const path = require('path')
 const tab = 'Website Data'
 const view = 'Main View'
+const CommonsChunkPlugin = require('webpack/lib/optimize/CommonsChunkPlugin')
 
 exports.modifyWebpackConfig = ({ config, stage }) => {
   config._config.resolve.modulesDirectories.push('./src')
+  console.log('RESOLVE', config._config.resolve)
+  const plugins = []
+  config._config.plugins.forEach((plugin, i) => {
+    if (plugin instanceof CommonsChunkPlugin) return // disabling this optimization
+    else plugins.push(plugin)
+  })
+  config._config.plugins = plugins
   return config
 }
 
@@ -13,6 +21,7 @@ exports.sourceNodes = ({ boundActionCreators }) => {
   const { createNode } = boundActionCreators
   return new Promise((resolve, reject) => {
     base(tab).select({ view }).eachPage(function(records, next) {
+
         records.forEach(function(record) {
 
           const [ slug ] = record.get('Slug') || []
@@ -53,6 +62,39 @@ exports.sourceNodes = ({ boundActionCreators }) => {
     });
   });
 }
+
+// exports.sourceNodes = ({ boundActionCreators }) => {
+//   const { createNode } = boundActionCreators
+//   return new Promise((resolve, reject) => {
+//     const records = [
+//       {
+//         id: 'record1',
+//         slug: 'pudge',
+//         guestFirstName: 'Jim',
+//         additionFirstName: 'Patti',
+//         includingNames: 'Anne-Marie and Alex',
+//         heroImages: ['images/C&J_beach.png', 'images/C&J_Spa.png', 'images/Cheers_J&C.png']
+//       }
+//     ]
+//     records.forEach(function(record) {
+//       const content = JSON.stringify(record)
+//       const contentDigest = crypto.createHash('md5').update(content).digest('hex')
+//       createNode({
+//         slug: record.slug,
+//         customizations: record,
+//         id: `AirtableRecord.${record.id}`,
+//         parent: '__SOURCE__',
+//         children: [],
+//         internal: {
+//           type: 'AirtableRecord',
+//           contentDigest,
+//           content
+//         },
+//       })
+//     });
+//     resolve()
+//   });
+// }
 
 function createIndexPages(createPage) {
   return new Promise((resolve, reject) => {

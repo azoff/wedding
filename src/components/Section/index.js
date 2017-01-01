@@ -28,22 +28,20 @@ class Section extends React.Component {
     ) {
       return this.renderSlider(this.props.customizations.heroImages)
     } else {
-      return this.renderSlider([require(`../../${this.props.imageUrl}`)])
+      return this.renderSlider([this.props.imageUrl])
     }
   }
   renderSliderImages(urls) {
-    return urls.map((url, i) =>
-      <div key={`i${i}`} className={styles.sectionImageContainer}>
-        <div
-          style={{ backgroundImage: `url("${url}")` }}
-          className={styles.sectionImageBackground}
-        />
-        <div
-          style={{ backgroundImage: `url("${url}")` }}
-          className={styles.sectionImage}
-        />
-      </div>
-    )
+    return urls.map((url, i) => {
+      const absURL = url.indexOf('http') === 0 ? url : require(`../../${url}`)
+      const style = { backgroundImage: `url("${absURL}")` }
+      return (
+        <div key={`i${i}`} className={styles.sectionImageContainer}>
+          <div style={style} className={styles.sectionImageBackground} />
+          <div style={style} className={styles.sectionImage} />
+        </div>
+      )
+    })
   }
   renderSlider(urls) {
     const settings = {
