@@ -1,12 +1,14 @@
 {
-  "name": "gatsby-starter-default",
-  "description": "Gatsby default starter",
+  "name": "wedding",
+  "description": "Our wedding website",
   "version": "1.0.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
-  "dependencies": {
+  "author": "Jonathan Azoff <jon@azof.fr>",
+  "devDependencies": {
     "gatsby": "^1.6.5",
+    "gatsby-cli": "^1.0.7",
     "gatsby-link": "^1.6.5",
-    "gatsby-plugin-react-helmet": "^1.0.1"
+    "gatsby-plugin-react-helmet": "^1.0.1",
+    "prettier": "^1.5.2"
   },
   "keywords": [
     "gatsby"
@@ -18,9 +20,5 @@
     "develop": "gatsby develop",
     "format": "prettier --trailing-comma es5 --no-semi --single-quote --write 'src/**/*.js'",
     "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "devDependencies": {
-    "gatsby-cli": "^1.0.7",
-    "prettier": "^1.5.2"
   }
 }
