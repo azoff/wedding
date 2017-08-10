@@ -1,0 +1,22 @@
+{
+  "name": "wedding",
+  "version": "1.0.0",
+  "description": "Our wedding website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/azoff/wedding.git"
+  },
+  "author": "Jonathan Azoff <jon@azof.fr>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/azoff/wedding/issues"
+  },
+  "homepage": "https://github.com/azoff/wedding#readme",
+  "devDependencies": {
+    "gatsby-cli": "^1.0.7"
+  }
+}
