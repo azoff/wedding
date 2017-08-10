@@ -1,22 +1,26 @@
 {
-  "name": "wedding",
+  "name": "gatsby-starter-default",
+  "description": "Gatsby default starter",
   "version": "1.0.0",
-  "description": "Our wedding website",
-  "main": "index.js",
+  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "dependencies": {
+    "gatsby": "^1.6.5",
+    "gatsby-link": "^1.6.5",
+    "gatsby-plugin-react-helmet": "^1.0.1"
+  },
+  "keywords": [
+    "gatsby"
+  ],
+  "license": "MIT",
+  "main": "n/a",
   "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "format": "prettier --trailing-comma es5 --no-semi --single-quote --write 'src/**/*.js'",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+ssh://git@github.com/azoff/wedding.git"
-  },
-  "author": "Jonathan Azoff <jon@azof.fr>",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/azoff/wedding/issues"
-  },
-  "homepage": "https://github.com/azoff/wedding#readme",
   "devDependencies": {
-    "gatsby-cli": "^1.0.7"
+    "gatsby-cli": "^1.0.7",
+    "prettier": "^1.5.2"
   }
 }
