@@ -1,0 +1,10 @@
+[
+	{
+		"links": [
+			{ "title": "location", "to": "location" },
+			{ "title": "activities", "to": "activities" },
+			{ "title": "wedding", "to": "wedding" },
+			{ "title": "registry", "to": "registry" }
+		]
+	}
+]

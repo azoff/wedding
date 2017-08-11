@@ -1,18 +1,29 @@
 import React from "react"
-import PropTypes from "prop-types"
-import Helmet from "react-helmet"
 import Header from "components/Header"
+// import Helmet from "react-helmet"
+
 import "./index.scss"
 
-const TemplateWrapper = ({ children }) =>
-	<div>
-		<Helmet />
-		<Header />
-		{children()}
-	</div>
-
-TemplateWrapper.propTypes = {
-	children: PropTypes.func,
+class IndexLayout extends React.Component {
+  render() {
+    return (
+      <div>
+        <Header {...this.props.data.header} />
+        {this.props.children()}
+      </div>
+    )
+  }
 }
 
-export default TemplateWrapper
+export default IndexLayout
+
+export const layoutQuery = graphql`
+  query LayoutQuery {
+    header: headerJson {
+      links {
+        title
+        to
+      }
+    }
+  }
+`

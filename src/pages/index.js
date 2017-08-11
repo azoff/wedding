@@ -1,8 +1,9 @@
 import React from "react"
 
-const IndexPage = () =>
-	<div>
-		<h1>Index</h1>
-	</div>
+class IndexPage extends React.Component {
+  render() {
+    return <div>Index!</div>
+  }
+}
 
 export default IndexPage
