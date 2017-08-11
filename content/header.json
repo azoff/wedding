@@ -1,18 +1,18 @@
 [
 	{
-		"header": {
-			"title": "May 27 2018",
+		"logo": {
+			"children": "May 27 2018",
 			"to": "/"
 		},
-		"subheader": {
-			"text": "#carozoffthemarket",
+		"hashtag": {
+			"children": "#carozoffthemarket",
 			"href": "https://urlgeni.us/instagram/carozoffthemarket"
 		},
 		"links": [
-			{ "title": "location", "to": "location" },
-			{ "title": "activities", "to": "activities" },
-			{ "title": "wedding", "to": "wedding" },
-			{ "title": "registry", "to": "registry" }
+			{ "children": "location", "to": "location" },
+			{ "children": "activities", "to": "activities" },
+			{ "children": "wedding", "to": "wedding" },
+			{ "children": "registry", "to": "registry" }
 		]
 	}
 ]

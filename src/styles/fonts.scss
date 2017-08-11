@@ -14,8 +14,7 @@
 	font-family: 'Avenir Next';
 	src: url('~/fonts/hinted-AvenirNext-Medium.eot');
 	src: local('Avenir Next Medium'), local('AvenirNext-Medium'),
-		url('~/fonts/hinted-AvenirNext-Medium.eot?#iefix')
-			format('embedded-opentype'),
+		url('~/fonts/hinted-AvenirNext-Medium.eot?#iefix') format('embedded-opentype'),
 		url('~/fonts/hinted-AvenirNext-Medium.woff2') format('woff2'),
 		url('~/fonts/hinted-AvenirNext-Medium.woff') format('woff'),
 		url('~/fonts/hinted-AvenirNext-Medium.ttf') format('truetype');
@@ -24,15 +23,13 @@
 }
 
 @font-face {
-	font-family: 'Avenir Next Ultra Light';
-	src: url('~/fonts/hinted-AvenirNext-UltraLight.eot');
-	src: local('AvenirNext-UltraLight'),
-		url('~/fonts/hinted-AvenirNext-UltraLight.eot?#iefix')
-			format('embedded-opentype'),
-		url('~/fonts/hinted-AvenirNext-UltraLight.woff2') format('woff2'),
-		url('~/fonts/hinted-AvenirNext-UltraLight.woff') format('woff'),
-		url('~/fonts/hinted-AvenirNext-UltraLight.ttf') format('truetype');
-	font-weight: 200;
+	font-family: 'Avenir Next';
+	src: url('~/fonts/hinted-AvenirNext-Regular.eot');
+	src: local('AvenirNext-Regular'), url('~/fonts/hinted-AvenirNext-Regular.eot?#iefix') format('embedded-opentype'),
+		url('~/fonts/hinted-AvenirNext-Regular.woff2') format('woff2'),
+		url('~/fonts/hinted-AvenirNext-Regular.woff') format('woff'),
+		url('~/fonts/hinted-AvenirNext-Regular.ttf') format('truetype');
+	font-weight: normal;
 	font-style: normal;
 }
 
@@ -40,8 +37,7 @@
 	font-family: 'Snell Roundhand';
 	src: url('~/fonts/hinted-SnellRoundhand-Black.eot');
 	src: local('Snell Roundhand Black'), local('SnellRoundhand-Black'),
-		url('~/fonts/hinted-SnellRoundhand-Black.eot?#iefix')
-			format('embedded-opentype'),
+		url('~/fonts/hinted-SnellRoundhand-Black.eot?#iefix') format('embedded-opentype'),
 		url('~/fonts/hinted-SnellRoundhand-Black.woff2') format('woff2'),
 		url('~/fonts/hinted-SnellRoundhand-Black.woff') format('woff'),
 		url('~/fonts/hinted-SnellRoundhand-Black.ttf') format('truetype');

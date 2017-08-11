@@ -13,5 +13,11 @@ module.exports = {
         path: `${__dirname}/content/`,
       },
     },
+    {
+      resolve: "gatsby-plugin-typography",
+      options: {
+        pathToConfigModule: "src/styles/typography",
+      },
+    },
   ],
 }

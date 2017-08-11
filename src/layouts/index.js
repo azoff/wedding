@@ -22,16 +22,16 @@ export default IndexLayout
 export const layoutQuery = graphql`
   query LayoutQuery {
     header: headerJson {
-      header {
-        title
+      logo {
+        children
         to
       }
-      subheader {
-        text
+      hashtag {
+        children
         href
       }
       links {
-        title
+        children
         to
       }
     }

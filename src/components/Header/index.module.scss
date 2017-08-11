@@ -1,0 +1,32 @@
+@import '../../styles/colors';
+
+.header {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	background: $color-header-background;
+	padding: 0.5rem;
+	a {
+		color: $color-header-link-base;
+	}
+}
+
+.headerLogo,
+.headerLink {
+	padding: 0.5rem;
+	text-align: center;
+}
+
+.headerLogo {
+	em:after {
+		content: '\A';
+		white-space: pre;
+	}
+	h1 {
+		margin-bottom: 0.25rem;
+	}
+}
+
+.headerLink {
+	text-transform: uppercase;
+}

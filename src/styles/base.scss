@@ -1,0 +1,22 @@
+@import './fonts';
+@import './colors';
+
+* {
+	color: $color-text-base;
+}
+
+body {
+	color: $color-body-background;
+}
+
+a {
+	transition: color 500ms;
+	color: $color-link-base;
+	text-decoration: none;
+	&:hover,
+	&:active,
+	&:focus {
+		opacity: 0.5;
+		outline: none;
+	}
+}
