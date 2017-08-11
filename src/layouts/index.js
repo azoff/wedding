@@ -1,17 +1,15 @@
-import React from "react"
-import Header from "components/Header"
+import React from 'react'
+import Header from 'components/Header'
 // import Helmet from "react-helmet"
 
-import "./index.scss"
+import './index.scss'
 
 class IndexLayout extends React.Component {
   render() {
     return (
       <div>
         <Header {...this.props.data.header} />
-        <main>
-          {this.props.children()}
-        </main>
+        {this.props.children()}
       </div>
     )
   }
@@ -20,7 +18,7 @@ class IndexLayout extends React.Component {
 export default IndexLayout
 
 export const layoutQuery = graphql`
-  query LayoutQuery {
+  query IndexLayoutQuery {
     header: headerJson {
       logo {
         children

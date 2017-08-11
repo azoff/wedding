@@ -21,7 +21,9 @@ const HeaderLogo = ({ logo, hashtag }) =>
 				<Link {...logo} />
 			</em>
 		</h1>
-		<a {...hashtag} />
+		<small>
+			<a {...hashtag} />
+		</small>
 	</div>
 
 Header.propTypes = {

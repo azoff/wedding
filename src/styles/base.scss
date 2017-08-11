@@ -10,7 +10,7 @@ body {
 }
 
 a {
-	transition: color 500ms;
+	transition: opacity 500ms;
 	color: $color-link-base;
 	text-decoration: none;
 	&:hover,
@@ -19,4 +19,11 @@ a {
 		opacity: 0.5;
 		outline: none;
 	}
+}
+
+#___gatsby {
+	max-width: 90rem;
+	display: block;
+	margin: 0 auto;
+	position: relative;
 }

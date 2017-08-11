@@ -18,9 +18,12 @@
 }
 
 .headerLogo {
-	em:after {
-		content: '\A';
-		white-space: pre;
+	em {
+		color: $color-text-base;
+		&:after {
+			content: '\A';
+			white-space: pre;
+		}
 	}
 	h1 {
 		margin-bottom: 0.25rem;
