@@ -9,7 +9,9 @@ class IndexLayout extends React.Component {
     return (
       <div>
         <Header {...this.props.data.header} />
-        {this.props.children()}
+        <main>
+          {this.props.children()}
+        </main>
       </div>
     )
   }
@@ -20,6 +22,14 @@ export default IndexLayout
 export const layoutQuery = graphql`
   query LayoutQuery {
     header: headerJson {
+      header {
+        title
+        to
+      }
+      subheader {
+        text
+        href
+      }
       links {
         title
         to
