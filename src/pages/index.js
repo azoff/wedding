@@ -21,6 +21,10 @@ export const pageQuery = graphql`
           title
           imageUrl
           blurb
+          link {
+            to
+            children
+          }
         }
       }
     }

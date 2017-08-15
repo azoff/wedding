@@ -18,10 +18,16 @@ class Section extends React.Component {
 					</h2>
 					<p>
 						{this.props.blurb}
+						{this.renderLink()}
 					</p>
 				</div>
 			</section>
 		)
+	}
+	renderLink() {
+		if (this.props.link) {
+			return <Link className={styles.sectionLink} {...this.props.link} />
+		}
 	}
 }
 

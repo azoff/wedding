@@ -3,5 +3,15 @@
 }
 
 .sectionContent {
-	padding: 0.5em 3.5rem 1rem;
+	padding: 0 4rem 2.6rem;
+	margin: 0;
+}
+
+.sectionLink {
+	float: right;
+	margin-bottom: 2.6rem;
+	&:before {
+		content: '\A';
+		white-space: pre;
+	}
 }
