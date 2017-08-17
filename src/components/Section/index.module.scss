@@ -5,6 +5,10 @@
 .sectionContent {
 	padding: 0 4rem 2.6rem;
 	margin: 0;
+	p {
+		overflow: hidden;
+		margin: 0;
+	}
 }
 
 .sectionLink {
@@ -13,5 +17,24 @@
 	&:before {
 		content: '\A';
 		white-space: pre;
+	}
+}
+
+.facets {
+	display: flex;
+	justify-content: space-between;
+	align-items: stretch;
+	align-content: stretch;
+	li {
+		flex-grow: 1;
+		position: relative;
+		padding-top: 33.3333333333%;
+		& > :first-child {
+			top: 0;
+			left: 0;
+			position: absolute;
+			width: 100%;
+			height: 100%;
+		}
 	}
 }

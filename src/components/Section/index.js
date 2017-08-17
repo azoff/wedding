@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Link from 'gatsby-link'
+import Facet from 'components/Facet'
 import styles from './index.module.scss'
 
 class Section extends React.Component {
@@ -21,6 +22,7 @@ class Section extends React.Component {
 						{this.renderLink()}
 					</p>
 				</div>
+				{this.renderFacetContainer()}
 			</section>
 		)
 	}
@@ -28,6 +30,22 @@ class Section extends React.Component {
 		if (this.props.link) {
 			return <Link className={styles.sectionLink} {...this.props.link} />
 		}
+	}
+	renderFacetContainer() {
+		if (this.props.facets) {
+			return (
+				<ul className={styles.facets}>
+					{this.renderFacets()}
+				</ul>
+			)
+		}
+	}
+	renderFacets() {
+		return this.props.facets.map((facet, i) =>
+			<li key={`f${i}`}>
+				<Facet to={this.props.link.to} {...facet} />
+			</li>
+		)
 	}
 }
 

@@ -1,0 +1,55 @@
+@import '../../styles/colors';
+
+.facet {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	background: none transparent center center/100% 100% scroll;
+
+	&::before {
+		top: 0;
+		left: 0;
+		z-index: 1;
+		content: '';
+		width: 100%;
+		height: 100%;
+		display: block;
+		position: absolute;
+		background-color: fade-out($color-facet-background, 0.5);
+		transition: background-color 500ms;
+	}
+
+	&:hover {
+		opacity: 1;
+		&::before {
+			background-color: fade-out($color-facet-background, 0.6);
+		}
+	}
+
+	h3,
+	h5 {
+		margin: 0;
+		z-index: 2;
+		position: relative;
+		text-transform: uppercase;
+		transition: height 500ms, color 500ms, background 500ms;
+	}
+
+	h3,
+	&:hover h5 {
+		color: $color-facet-text-base;
+	}
+
+	h5 {
+		height: 0;
+		font-weight: 400;
+		margin-top: 0.05rem;
+		color: fade-out($color-facet-text-base, 1);
+	}
+
+	&:hover h5 {
+		height: 1em;
+	}
+}

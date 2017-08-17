@@ -2,7 +2,7 @@ import Typography from 'typography'
 
 const typography = new Typography({
   baseFontSize: '16px',
-  baseLineHeight: 2.6,
+  baseLineHeight: 2.4,
   scaleRatio: 2,
   headerFontFamily: ['Avenir Next', 'sans-serif'],
   bodyFontFamily: ['Avenir Next', 'sans-serif'],

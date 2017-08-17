@@ -25,6 +25,12 @@ export const pageQuery = graphql`
             to
             children
           }
+          facets {
+            title
+            subtitle
+            imageUrl
+            fragment
+          }
         }
       }
     }

@@ -21,9 +21,9 @@ a {
 	}
 }
 
-#___gatsby {
-	max-width: 90rem;
-	display: block;
-	margin: 0 auto;
-	position: relative;
+ul,
+li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
 }

@@ -11,6 +11,26 @@
 		"link": {
 			"to": "location",
 			"children": "Directions and more »"
-		}
+		},
+		"facets": [
+			{
+				"title": "the lookout",
+				"subtitle": "ceremony site",
+				"imageUrl": "images/suncadia-the-lookout.jpg",
+				"fragment": "ceremony"
+			},
+			{
+				"title": "amphitheater",
+				"subtitle": "reception site",
+				"imageUrl": "images/suncadia-the-amphitheater.jpg",
+				"fragment": "reception"
+			},
+			{
+				"title": "the lodge",
+				"subtitle": "hotel and resort",
+				"imageUrl": "images/suncadia-the-lodge.jpg",
+				"fragment": "resort"
+			}
+		]
 	}
 ]
