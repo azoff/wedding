@@ -2,10 +2,17 @@
 
 ## TODO
 
-- [ ] JSON "data" files using graphql
-- [ ] Static home page styling
+- [x] JSON "data" files using graphql
+- [x] Static home page styling
+- [ ] Favicons and Home Screen icons
+- [ ] Social (OpenGraph) Content
+- [ ] Optimize for mobile and large screens
+- [ ] Add Coming Soon pages
+- [ ] Add 404 Page
 - [ ] Create Airtable [source plugin][2]
 - [ ] [Create pages][1] for each guest
+- [ ] Create cloudflare SSL proxy
+- [ ] Point custom domain at cloudflare
 
 
 [1]:https://www.gatsbyjs.org/docs/creating-and-modifying-pages/
