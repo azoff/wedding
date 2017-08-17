@@ -1,0 +1,13 @@
+$size-macbook-width: 1440px;
+$size-ipad-pro-width: 1336px;
+$size-ipad-height: 1024px;
+$size-ipad-width: 768px;
+$size-iphone-6p-width: 414px;
+$size-iphone-6-width: 375px;
+
+$size-breakpoint-max: $size-macbook-width;
+$size-breakpoint-desktop: $size-ipad-pro-width;
+$size-breakpoint-tablet: $size-ipad-height;
+$size-breakpoint-phablet: $size-ipad-width;
+$size-breakpoint-mobile: $size-iphone-6p-width;
+$size-breakpoint-min: $size-iphone-6-width;

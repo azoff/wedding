@@ -1,8 +1,16 @@
 @import '../styles/base';
+@import '../styles/sizes';
 
 #___gatsby {
-	max-width: 90rem;
+	min-width: $size-breakpoint-min;
+	max-width: $size-breakpoint-max;
 	display: block;
 	margin: 0 auto;
 	position: relative;
+}
+
+@media (max-width: $size-breakpoint-mobile) {
+	html {
+		font-size: 75%;
+	}
 }

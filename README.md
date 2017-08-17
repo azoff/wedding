@@ -6,7 +6,7 @@
 - [x] Static home page styling
 - [ ] Favicons and Home Screen icons
 - [ ] Social (OpenGraph) Content
-- [ ] Optimize for mobile and large screens
+- [x] Optimize for mobile and large screens
 - [ ] Add Coming Soon pages
 - [ ] Add sub pages (like `/location`)
 - [ ] Add 404 Page

@@ -7,7 +7,7 @@ import styles from './index.module.scss'
 class Section extends React.Component {
 	render() {
 		return (
-			<section>
+			<section className={styles.section}>
 				<img
 					className={styles.sectionImage}
 					src={require(`../../${this.props.imageUrl}`)}

@@ -1,3 +1,11 @@
+@import '../../styles/sizes';
+
+.section {
+	@media (max-width: $size-breakpoint-mobile) {
+		margin-bottom: 2.4rem;
+	}
+}
+
 .sectionImage {
 	width: 100%;
 }
@@ -8,6 +16,9 @@
 	p {
 		overflow: hidden;
 		margin: 0;
+	}
+	@media (max-width: $size-breakpoint-mobile) {
+		padding: 0 3rem 2.4rem;
 	}
 }
 
@@ -25,6 +36,9 @@
 	justify-content: space-between;
 	align-items: stretch;
 	align-content: stretch;
+	@media (max-width: $size-breakpoint-mobile) {
+		display: block;
+	}
 	li {
 		flex-grow: 1;
 		position: relative;
