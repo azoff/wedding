@@ -1,0 +1,21 @@
+@import '../../styles/colors';
+
+.footer {
+	padding: 4rem 2rem;
+	img {
+		width: 8rem;
+		margin: 0;
+	}
+	span {
+		font-size: 1.3rem;
+		color: $color-footer-text-base;
+	}
+}
+
+.footerContent {
+	line-height: 2rem;
+	text-align: left;
+	padding: 6.5rem 0 0 2rem;
+	display: inline-block;
+	vertical-align: top;
+}
