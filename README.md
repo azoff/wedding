@@ -8,6 +8,7 @@
 - [ ] Social (OpenGraph) Content
 - [ ] Optimize for mobile and large screens
 - [ ] Add Coming Soon pages
+- [ ] Add sub pages (like `/location`)
 - [ ] Add 404 Page
 - [ ] Create Airtable [source plugin][2]
 - [ ] [Create pages][1] for each guest
