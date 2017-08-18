@@ -19,7 +19,7 @@
   "license": "MIT",
   "main": "n/a",
   "scripts": {
-    "deploy": "surge public --domain deep-nubz.beomni.com",
+    "deploy": "surge public --domain deep-nubz.surge.sh",
     "build": "gatsby build",
     "develop": "NODE_PATH=./src gatsby develop",
     "format": "prettier --trailing-comma es5 --no-semi --single-quote --write 'src/**/*.js'",
