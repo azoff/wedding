@@ -1,9 +1,6 @@
 @import '../../styles/sizes';
 
 .section {
-	@media (max-width: $size-breakpoint-mobile) {
-		margin-bottom: 2.4rem;
-	}
 }
 
 .sectionImage {

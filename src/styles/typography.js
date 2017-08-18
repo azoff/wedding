@@ -7,7 +7,7 @@ const typography = new Typography({
   headerFontFamily: ['Avenir Next', 'sans-serif'],
   bodyFontFamily: ['Avenir Next', 'sans-serif'],
   headerWeight: 500,
-  bodyWeight: 200,
+  bodyWeight: 400,
   boldWeight: 'bold',
   overrideThemeStyles: ({ rhythm }, options) => ({
     '*': {
