@@ -17,7 +17,7 @@ exports.sourceNodes = async ({ boundActionCreators }) => {
 					const contentDigest = crypto.createHash('md5').update(content).digest('hex')
 					createNode({
 						id: `airtable.${record.id}`,
-						slug: record.get('Slug'),
+						slug: record.get('Slug')[0],
 						parent: '__SOURCE__',
 						children: [],
 						internal: {
