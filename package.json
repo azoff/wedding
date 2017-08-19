@@ -4,6 +4,7 @@
   "version": "1.0.0",
   "author": "Jonathan Azoff <jon@azof.fr>",
   "devDependencies": {
+    "airtable": "^0.5.0",
     "gatsby": "^1.6.5",
     "gatsby-cli": "^1.0.7",
     "gatsby-link": "^1.6.5",
@@ -15,7 +16,9 @@
     "prettier": "^1.5.2",
     "surge": "^0.19.0"
   },
-  "keywords": ["gatsby"],
+  "keywords": [
+    "gatsby"
+  ],
   "license": "MIT",
   "main": "n/a",
   "scripts": {
