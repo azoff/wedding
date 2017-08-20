@@ -42,11 +42,12 @@ class Section extends React.Component {
 			className: styles.sectionSlider,
 			autoplay: urls.length > 1,
 			autoplaySpeed: 5000,
-			dots: true,
+			dots: urls.length > 1,
 			dotsClass: styles.sectionSliderDots,
-			infinite: true,
-			lazyLoad:	true,
+			infinite: urls.length > 1,
+			lazyLoad:	false,
 			slidesToShow:	1,
+			swipe: urls.length > 1
 		}
 		return (
 			<Slider {...settings}>
