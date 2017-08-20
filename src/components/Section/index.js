@@ -4,6 +4,7 @@ import Link from 'gatsby-link'
 import Facet from 'components/Facet'
 import styles from './index.module.scss'
 import Slider from 'react-slick';
+import nl2br from 'utils/nl2br';
 
 class Section extends React.Component {
 	render() {
@@ -13,7 +14,7 @@ class Section extends React.Component {
 				<div className={styles.sectionContent}>
 					{this.renderTitle()}
 					<p>
-						{this.props.blurb}
+						{nl2br(this.props.blurb)}
 						{this.renderLink()}
 					</p>
 				</div>
