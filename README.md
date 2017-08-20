@@ -19,6 +19,7 @@
 - [ ] Hook up title and blurb overrides
 - [ ] Create cloudflare SSL proxy
 - [ ] Point custom domain at cloudflare
+- [ ] Add getting started info
 
 
 [1]:https://www.gatsbyjs.org/docs/creating-and-modifying-pages/
