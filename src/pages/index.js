@@ -1,20 +1,29 @@
 import React from 'react'
-import { renderConnectionEdgeNodes } from 'components/Section'
+import Section from 'components/Section'
 
 class IndexPage extends React.Component {
   render() {
     return (
-      <main>
-        {renderConnectionEdgeNodes(this.props.data.allSectionJson)}
-      </main>
+      <main>{this.renderSections()}</main>
     )
+  }
+  renderSections() {
+    return this.props.data.allSectionJson.edges.map(({ node }, i) => this.renderSection(node, i))
+  }
+  renderSection(node, i) {
+    const record = this.props.data.airtableRecord
+    if (i === 0 && record) {
+      return <Section key={`s${i}`} {...node} {...record} />
+    } else {
+      return <Section key={`s${i}`} {...node} />
+    }
   }
 }
 
 export default IndexPage
 
 export const pageQuery = graphql`
-  query IndexPageQuery {
+  query IndexPageQuery($id:String = "") {
     allSectionJson {
       edges {
         node {
@@ -32,6 +41,14 @@ export const pageQuery = graphql`
             fragment
           }
         }
+      }
+    }
+    airtableRecord(id:{eq:$id}) {
+      customizations {
+        guestFirstName
+        additionFirstName
+        includingNames
+        heroImages
       }
     }
   }

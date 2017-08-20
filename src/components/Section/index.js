@@ -3,20 +3,15 @@ import PropTypes from 'prop-types'
 import Link from 'gatsby-link'
 import Facet from 'components/Facet'
 import styles from './index.module.scss'
+import Slider from 'react-slick';
 
 class Section extends React.Component {
 	render() {
 		return (
 			<section className={styles.section}>
-				<img
-					className={styles.sectionImage}
-					src={require(`../../${this.props.imageUrl}`)}
-					alt={`Image for "${this.props.title}"`}
-				/>
+				{this.renderImages()}
 				<div className={styles.sectionContent}>
-					<h2>
-						{this.props.title}
-					</h2>
+					{this.renderTitle()}
 					<p>
 						{this.props.blurb}
 						{this.renderLink()}
@@ -24,6 +19,65 @@ class Section extends React.Component {
 				</div>
 				{this.renderFacetContainer()}
 			</section>
+		)
+	}
+	renderImages() {
+		if (this.props.customizations && this.props.customizations.heroImages.length) {
+			return this.renderSlider(this.props.customizations.heroImages)
+		} else {
+			return this.renderSlider([require(`../../${this.props.imageUrl}`)])
+		}
+	}
+	renderSliderImages(urls) {
+		return urls.map((url,i) =>
+			<div key={`i${i}`} style={{ backgroundImage: `url("${url}")` }} className={styles.sectionImage}></div>
+		)
+	}
+	renderSlider(urls) {
+		const settings = {
+			arrows:	false,
+			accessibility: true,
+			adaptiveHeight:	false,
+			variableWidth: false,
+			className: styles.sectionSlider,
+			autoplay: urls.length > 1,
+			autoplaySpeed: 5000,
+			dots: true,
+			dotsClass: styles.sectionSliderDots,
+			infinite: true,
+			lazyLoad:	true,
+			slidesToShow:	1,
+		}
+		return (
+			<Slider {...settings}>
+				{this.renderSliderImages(urls)}
+			</Slider>
+		)
+	}
+	renderTitle() {
+		let title = this.props.title
+		const customizations = this.props.customizations
+		if (customizations) {
+			let suffix, names = [];
+			if (customizations.guestFirstName) {
+				names.push(customizations.guestFirstName)
+			}
+			if (customizations.additionFirstName) {
+				names.push(customizations.additionFirstName)
+			}
+			if (customizations.includingNames) {
+				names.push(customizations.includingNames)
+				if (customizations.includingNames.indexOf('and ') < 0) {
+					names.push(`and ${customizations.includingNames}`)
+				}
+				suffix = names.join(', ')
+			} else {
+				suffix = names.join(' and ')
+			}
+			title = title.replace(/(\W?$)/, ` ${suffix}$1`);
+		}
+		return (
+			<h2>{title}</h2>
 		)
 	}
 	renderLink() {
@@ -48,8 +102,6 @@ class Section extends React.Component {
 		)
 	}
 }
-
-Section.renderConnectionEdgeNodes = c => c.edges.map((edge, i) => <Section key={`s${i}`} {...edge.node} />)
 
 Section.propTypes = {
 	title: PropTypes.string.isRequired,

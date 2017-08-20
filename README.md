@@ -11,7 +11,8 @@
 - [ ] Add sub pages (like `/location`)
 - [ ] Add 404 Page
 - [x] Create Airtable [source plugin][2]
-- [ ] [Create pages][1] for each guest
+- [x] [Create pages][1] for each guest
+- [ ] Override images and titles
 - [ ] Create cloudflare SSL proxy
 - [ ] Point custom domain at cloudflare
 
