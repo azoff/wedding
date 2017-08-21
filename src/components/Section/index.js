@@ -31,7 +31,10 @@ class Section extends React.Component {
 	}
 	renderSliderImages(urls) {
 		return urls.map((url,i) =>
-			<div key={`i${i}`} style={{ backgroundImage: `url("${url}")` }} className={styles.sectionImage}></div>
+			<div key={`i${i}`} className={styles.sectionImageContainer}>
+				<div style={{ backgroundImage: `url("${url}")` }} className={styles.sectionImageBackground}></div>
+				<div style={{ backgroundImage: `url("${url}")` }} className={styles.sectionImage} />
+			</div>
 		)
 	}
 	renderSlider(urls) {
@@ -48,7 +51,8 @@ class Section extends React.Component {
 			infinite: urls.length > 1,
 			lazyLoad:	false,
 			slidesToShow:	1,
-			swipe: urls.length > 1
+			swipe: urls.length > 1,
+			slidesToShow: 1
 		}
 		return (
 			<Slider {...settings}>

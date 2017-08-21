@@ -2,11 +2,11 @@
 
 ## TODO
 
-- [ ] Add Coming Soon pages
 - [ ] Add location page
 - [ ] Add activities page
 - [ ] Add wedding page
 - [ ] Add registry page
+- [ ] Add coming Soon page
 - [ ] Fix 404 Page
 - [ ] Create cloudflare SSL proxy
 - [ ] Point custom domain at cloudflare
