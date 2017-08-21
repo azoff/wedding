@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Link from 'gatsby-link'
 import Facet from 'components/Facet'
+import SubSection from 'components/SubSection'
 import styles from './index.module.scss'
 import Slider from 'react-slick';
 import nl2br from 'utils/nl2br';
@@ -98,13 +99,24 @@ class Section extends React.Component {
 					{this.renderFacets()}
 				</ul>
 			)
+		} else if (this.props.subSections) {
+			return (
+				<ul className={styles.subSections}>
+					{this.renderSubSections()}
+				</ul>
+			)
 		}
 	}
 	renderFacets() {
 		return this.props.facets.map((facet, i) =>
 			<li key={`f${i}`}>
-				<Facet to={this.props.link.to} {...facet} />
+				<Facet to={this.props.link?this.props.link.to:''} {...facet} />
 			</li>
+		)
+	}
+	renderSubSections() {
+		return this.props.subSections.map((subSection, i) =>
+			<SubSection key={`ss${i}`} {...subSection} />
 		)
 	}
 }

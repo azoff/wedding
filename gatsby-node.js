@@ -54,8 +54,7 @@ exports.sourceNodes = ({ boundActionCreators }) => {
   });
 }
 
-exports.createPages = ({ boundActionCreators, graphql }) => {
-  const { createPage } = boundActionCreators
+function createIndexPages(createPage) {
   return new Promise((resolve, reject) => {
     graphql(`{
       allAirtableRecord {
@@ -79,6 +78,66 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
 
       resolve(result)
     })
-
   })
+}
+
+function createIndexPages(graphql, createPage) {
+  return new Promise((resolve, reject) => {
+    graphql(`{
+      allAirtableRecord {
+        edges {
+          node {
+            id
+            slug
+          }
+        }
+      }
+    }`).then(result => {
+      if (result.errors) {
+        reject(result.errors)
+      }
+
+      const component = path.resolve('src/pages/index.js')
+      result.data.allAirtableRecord.edges.forEach(({ node: context }) => {
+        createPage({ path: context.slug, component, context })
+      })
+
+      resolve(result)
+    })
+  })
+}
+
+function createSectionPages(graphql, createPage) {
+  return new Promise((resolve, reject) => {
+    graphql(`{
+      allSectionJson {
+        edges {
+          node {
+            path
+          }
+        }
+      }
+    }`).then(result => {
+      if (result.errors) {
+        reject(result.errors)
+      }
+
+      const component = path.resolve('src/templates/section.js')
+      result.data.allSectionJson.edges.forEach(({ node: context }) => {
+        if (context.path) {
+          createPage({ path: context.path, component, context })
+        }
+      })
+
+      resolve(result)
+    })
+  })
+}
+
+exports.createPages = ({ boundActionCreators, graphql }) => {
+  const { createPage } = boundActionCreators
+  return Promise.all([
+    createIndexPages(graphql, createPage),
+    createSectionPages(graphql, createPage)
+  ])
 }
