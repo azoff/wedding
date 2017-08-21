@@ -67,7 +67,11 @@
     -o-filter: blur(20px);
     -ms-filter: blur(20px);
     filter: blur(20px);
+    @media screen and (min-device-aspect-ratio: 10/9) {
+      display: none;
+    }
 }
+
 .sectionImage {
     top: 0;
     left: 0;
