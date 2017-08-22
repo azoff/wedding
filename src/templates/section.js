@@ -14,8 +14,8 @@ class SectionPageTemplate extends React.Component {
 export default SectionPageTemplate
 
 export const pageQuery = graphql`
-  query SectionPageTemplateQuery($path:String = "") {
-    sectionJson(path:{eq:$path}) {
+  query SectionPageTemplateQuery($id:String = "") {
+    sectionJson(id:{eq:$id}) {
       title
       imageUrl
       blurb
@@ -25,8 +25,11 @@ export const pageQuery = graphql`
         imageUrl
         id: fragment
         blurb
-        link
         component
+        link {
+          href
+          children
+        }
       }
     }
   }

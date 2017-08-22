@@ -5,7 +5,7 @@
 		"imageUrl": "images/hero-default.jpg"
 	},
 	{
-		"path": "location",
+		"id": "location",
 		"title": "Suncadia, Cle Elum, Washington",
 		"blurb": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
 		"imageUrl": "images/suncadia-arial.jpg",
@@ -50,7 +50,7 @@
 		]
 	},
 	{
-		"path": "activities",
+		"id": "activities",
 		"title": "Things to Do",
 		"blurb": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
 		"imageUrl": "images/suncadia-activities.jpg",
@@ -95,7 +95,7 @@
 		]
 	},
 	{
-		"path": "wedding",
+		"id": "wedding",
 		"title": "A Wedding in Washington",
 		"blurb": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
 		"imageUrl": "images/wedding-hall.jpg",
@@ -109,6 +109,7 @@
 				"subtitle": "times and places",
 				"imageUrl": "images/wedding-alter.jpg",
 				"fragment": "schedule",
+				"component": "",
 				"blurb": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
 				"link": {
 					"href": "http://todo.com",
@@ -120,6 +121,7 @@
 				"subtitle": "all the mushy stuff",
 				"imageUrl": "images/wedding-us.jpg",
 				"fragment": "story",
+				"component": null,
 				"blurb": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
 				"link": {
 					"href": "http://todo.com",
@@ -131,6 +133,7 @@
 				"subtitle": "our BFFs",
 				"imageUrl": "images/wedding-shoes.jpg",
 				"fragment": "party",
+				"component": null,
 				"blurb": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
 				"link": {
 					"href": "http://todo.com",
@@ -140,7 +143,7 @@
 		]
 	},
 	{
-		"path": "registry",
+		"id": "registry",
 		"title": "Our Wedding Registry",
 		"blurb": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
 		"imageUrl": "images/registry-header.jpg",

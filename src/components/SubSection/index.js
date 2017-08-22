@@ -7,14 +7,18 @@ import nl2br from 'utils/nl2br'
 class SubSection extends React.Component {
 	render() {
 		const image = require(`../../${this.props.imageUrl}`)
+		const style = { backgroundImage: `url("${image}")` }
 		return (
-			<div id={this.props.id} className={styles.subSection}>
-				<img src={image} />
-				<h2>{this.props.title}</h2>
-				<h4>{this.props.subtitle}</h4>
-				{this.renderBlurb()}
-				{this.renderLink()}
-				{this.renderComponent()}
+			<div className={styles.subSection}>
+				<div id={this.props.id} className={styles.subSectionAnchor} />
+				<figure style={style} />
+				<aside>
+					<h2>{this.props.title}</h2>
+					<h4>{this.props.subtitle}</h4>
+					{this.renderBlurb()}
+					{this.renderLink()}
+					{this.renderComponent()}
+				</aside>
 			</div>
 		)
 	}

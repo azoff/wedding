@@ -113,7 +113,7 @@ function createSectionPages(graphql, createPage) {
       allSectionJson {
         edges {
           node {
-            path
+            id
           }
         }
       }
@@ -124,8 +124,8 @@ function createSectionPages(graphql, createPage) {
 
       const component = path.resolve('src/templates/section.js')
       result.data.allSectionJson.edges.forEach(({ node: context }) => {
-        if (context.path) {
-          createPage({ path: context.path, component, context })
+        if (context.id) {
+          createPage({ path: context.id, component, context })
         }
       })
 
