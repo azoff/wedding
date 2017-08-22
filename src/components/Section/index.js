@@ -5,7 +5,7 @@ import Facet from 'components/Facet'
 import SubSection from 'components/SubSection'
 import styles from './index.module.scss'
 import Slider from 'react-slick';
-import nl2br from 'utils/nl2br';
+import marked from 'marked';
 
 class Section extends React.Component {
 	render() {
@@ -15,7 +15,7 @@ class Section extends React.Component {
 				<div className={styles.sectionContent}>
 					{this.renderTitle()}
 					<p>
-						{nl2br(this.props.blurb)}
+						<span dangerouslySetInnerHTML={{__html: marked(this.props.blurb)}} />
 						{this.renderLink()}
 					</p>
 				</div>

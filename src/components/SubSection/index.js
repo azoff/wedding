@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Link from 'gatsby-link'
 import styles from './index.module.scss'
-import nl2br from 'utils/nl2br'
+import marked from 'marked';
 
 class SubSection extends React.Component {
 	render() {
@@ -15,16 +15,18 @@ class SubSection extends React.Component {
 				<aside>
 					<h2>{this.props.title}</h2>
 					<h4>{this.props.subtitle}</h4>
-					{this.renderBlurb()}
-					{this.renderLink()}
 					{this.renderComponent()}
+					<p>
+						{this.renderBlurb()}
+						{this.renderLink()}
+					</p>
 				</aside>
 			</div>
 		)
 	}
 	renderBlurb() {
 		if (this.props.blurb) {
-			return <p>{nl2br(this.props.blurb)}</p>
+			return <span dangerouslySetInnerHTML={{__html: marked(this.props.blurb)}} />
 		}
 	}
 	renderLink() {
