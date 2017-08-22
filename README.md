@@ -2,10 +2,9 @@
 
 ## TODO
 
-- [ ] Add location page
-- [ ] Add activities page
-- [ ] Add wedding page
-- [ ] Add registry page
+- [ ] Add support for links in content
+- [ ] Custom component for hotels
+- [ ] Custom component for directions
 - [ ] Add coming Soon page
 - [ ] Fix 404 Page
 - [ ] Create cloudflare SSL proxy
@@ -13,6 +12,10 @@
 - [ ] Site Title + Meta
 - [ ] Favicons and Home Screen icons
 - [ ] Social (OpenGraph) Content
+- [x] Add location page
+- [x] Add activities page
+- [x] Add wedding page
+- [x] Add registry page
 - [x] JSON "data" files using graphql
 - [x] Static home page styling
 - [x] Optimize for mobile and large screens

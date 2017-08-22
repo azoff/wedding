@@ -9,10 +9,10 @@
 			"href": "https://urlgeni.us/instagram/carozoffthemarket"
 		},
 		"links": [
-			{ "children": "location", "to": "location" },
-			{ "children": "activities", "to": "activities" },
-			{ "children": "wedding", "to": "wedding" },
-			{ "children": "registry", "to": "registry" }
+			{ "children": "location", "to": "/location" },
+			{ "children": "activities", "to": "/activities" },
+			{ "children": "wedding", "to": "/wedding" },
+			{ "children": "registry", "to": "/registry" }
 		]
 	}
 ]
