@@ -108,6 +108,9 @@
 }
 
 .facets {
+  margin: 0;
+  padding: 0;
+  list-style: none;
   display: flex;
   justify-content: space-between;
   align-items: stretch;
@@ -118,7 +121,9 @@
   li {
     flex-grow: 1;
     position: relative;
-    padding-top: 33.3333333333%;
+    padding: 33.3333333333% 0 0 0;
+    margin: 0;
+    list-style: none;
     & > :first-child {
       top: 0;
       left: 0;
