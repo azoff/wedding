@@ -14,8 +14,8 @@ class SectionPageTemplate extends React.Component {
 export default SectionPageTemplate
 
 export const pageQuery = graphql`
-  query SectionPageTemplateQuery($id:String = "") {
-    sectionJson(id:{eq:$id}) {
+  query SectionPageTemplateQuery($id: String = "") {
+    sectionJson(id: { eq: $id }) {
       title
       imageUrl
       blurb

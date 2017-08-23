@@ -4,11 +4,15 @@ import Section from 'components/Section'
 class IndexPage extends React.Component {
   render() {
     return (
-      <main>{this.renderSections()}</main>
+      <main>
+        {this.renderSections()}
+      </main>
     )
   }
   renderSections() {
-    return this.props.data.allSectionJson.edges.map(({ node }, i) => this.renderSection(node, i))
+    return this.props.data.allSectionJson.edges.map(({ node }, i) =>
+      this.renderSection(node, i)
+    )
   }
   renderSection(node, i) {
     const record = this.props.data.airtableRecord
@@ -23,7 +27,7 @@ class IndexPage extends React.Component {
 export default IndexPage
 
 export const pageQuery = graphql`
-  query IndexPageQuery($id:String = "") {
+  query IndexPageQuery($id: String = "") {
     allSectionJson {
       edges {
         node {
@@ -43,7 +47,7 @@ export const pageQuery = graphql`
         }
       }
     }
-    airtableRecord(id:{eq:$id}) {
+    airtableRecord(id: { eq: $id }) {
       customizations {
         guestFirstName
         additionFirstName
