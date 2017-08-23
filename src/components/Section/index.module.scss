@@ -101,6 +101,11 @@
   display: inline-block;
 }
 
+.facets, .subSections {
+  margin: 0;
+  padding: 0;
+}
+
 .facets {
   margin: 0;
   padding: 0;
@@ -124,6 +129,9 @@
       position: absolute;
       width: 100%;
       height: 100%;
+    }
+    @media (max-width: $size-breakpoint-mobile) {
+      padding-top: 45%
     }
   }
 }

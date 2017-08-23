@@ -17,7 +17,7 @@
 		width: 40%;
 		padding-top: 40%;
 		float: left;
-		background: none transparent center center/cover no-repeat scroll;
+		background: none transparent center 30%/cover no-repeat scroll;
 	}
 
 	aside {
@@ -27,7 +27,7 @@
 		h2 {
 			margin-bottom: 0.6rem;
 		}
-		h2, h4 {
+		& > h2, & > h4 {
 			text-transform: uppercase;
 		}
 		& > a {
@@ -40,7 +40,7 @@
     	width: 100%;
     }
     figure {
-    	padding-top: 60%;
+    	padding-top: 100%;
     }
     aside {
     	padding: 0 0.5rem;
