@@ -40,11 +40,11 @@
 	{
 		"id": "activities",
 		"title": "Things to Do",
-		"blurb": "Call us a progressive couple – Jonathan was the one to pick up [a wedding planning book](https://www.amazon.com/Man-Nup-Grooms-Wedding-Planning/dp/1530210658) (and read it cover to cover). One of the guiding principals of the book was to have a mantra that could ground us throughout the potential craziness of wedding planning.  Our mantra: LOVE.\n\nThis mantra supported our choice to have our special day at a location where our most special people can spend time together – connect with close friends and family, reconnect with old ones, and make new ones.  We also acknowledge that this takes extra effort, time and funds on your part… so once you make it, we want to make sure you feel taken care of and have plenty to do (or not do).",
+		"blurb": "Call us a progressive couple – Jonathan was the one to pick up [a wedding planning book](https://www.amazon.com/Man-Nup-Grooms-Wedding-Planning/dp/1530210658) (and read it cover to cover). One of the guiding principals of the book was to have a mantra that could ground us throughout the potential craziness of wedding planning.  Our mantra: LOVE.\n\nThis mantra supported our choice to have our special day at a location where our most special people can spend time together – connect with close friends and family, reconnect with old ones, and make new ones.  We also acknowledge that this takes extra effort, time and funds on your part… so once you make it, we want to make sure you feel taken care of and have plenty to do (or not do, if that's your thing).",
 		"imageUrl": "images/suncadia-activities.jpg",
 		"link": {
 			"to": "/activities",
-			"children": "Check it out »"
+			"children": "See examples »"
 		},
 		"facets": [
 			{
@@ -64,9 +64,9 @@
 			{
 				"title": "kick back, relax",
 				"subtitle": "treat yourself",
-				"imageUrl": "images/suncadia-spa.jpg",
+				"imageUrl": "images/C&J_Spa.png",
 				"fragment": "relax",
-				"blurb": "### Spa\nTreat yourself! Suncadia has [a very nice spa](https://www.destinationhotels.com/suncadia-resort/spa/washington-spa-services) onsite, with massage services, facials, detox pools, and more.\n\n![image](https://github.com/azoff/wedding/raw/master/src/images/C&J_Spa.png)\n\n\n### Bonfires (and S’Mores)\nCarolyn has an admitted sweet tooth… and Jonathan will pretend that he doesn’t. But there is something we both love about bonfires and golden brown 'mallows. Look out for bonfires throughout the resort – near the Amphitheater, The Inn, and The Lodge.\n\n![image](https://github.com/azoff/wedding/raw/master/src/images/C&J_beach.png)"
+				"blurb": "### Spa\nTreat yourself! Suncadia has [a very nice spa](https://www.destinationhotels.com/suncadia-resort/spa/washington-spa-services) onsite, with massage services, facials, detox pools, and more.\n\n\n![image](https://github.com/azoff/wedding/raw/master/src/images/C&J_beach.png)\n### Bonfires (and S’Mores)\nCarolyn has an admitted sweet tooth… and Jonathan will pretend that he doesn’t. But there is something we both love about bonfires and golden brown 'mallows. Look out for bonfires throughout the resort – near the Amphitheater, The Inn, and The Lodge."
 			}
 		]
 	},
@@ -99,8 +99,7 @@
 				"subtitle": "our BFFs",
 				"imageUrl": "images/wedding-shoes.jpg",
 				"fragment": "party",
-				"blurb": "Coming Soon!",
-				"component": ""
+				"blurb": "Coming Soon!"
 			}
 		]
 	},

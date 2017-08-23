@@ -25,11 +25,6 @@ export const pageQuery = graphql`
         imageUrl
         id: fragment
         blurb
-        component
-        link {
-          href
-          children
-        }
       }
     }
   }

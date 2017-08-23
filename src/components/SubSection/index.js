@@ -19,11 +19,8 @@ class SubSection extends React.Component {
           <h4>
             {this.props.subtitle}
           </h4>
+          {this.renderBlurb()}
           {this.renderComponent()}
-          <p>
-            {this.renderBlurb()}
-            {this.renderLink()}
-          </p>
         </aside>
       </div>
     )
@@ -31,7 +28,7 @@ class SubSection extends React.Component {
   renderBlurb() {
     if (this.props.blurb) {
       return (
-        <span dangerouslySetInnerHTML={{ __html: marked(this.props.blurb) }} />
+        <div rel="markdown" dangerouslySetInnerHTML={{ __html: marked(this.props.blurb) }} />
       )
     }
   }

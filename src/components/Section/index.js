@@ -14,12 +14,8 @@ class Section extends React.Component {
         {this.renderImages()}
         <div className={styles.sectionContent}>
           {this.renderTitle()}
-          <p>
-            <span
-              dangerouslySetInnerHTML={{ __html: marked(this.props.blurb) }}
-            />
-            {this.renderLink()}
-          </p>
+          <div rel="markdown" dangerouslySetInnerHTML={{ __html: marked(this.props.blurb) }} />
+          {this.renderLink()}
         </div>
         {this.renderFacetContainer()}
       </section>
