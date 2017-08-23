@@ -2,7 +2,6 @@
 
 ## TODO
 
-- [ ] Add support for links in content
 - [ ] Custom component for hotels
 - [ ] Custom component for directions
 - [ ] Add coming Soon page
@@ -12,6 +11,9 @@
 - [ ] Site Title + Meta
 - [ ] Favicons and Home Screen icons
 - [ ] Social (OpenGraph) Content
+- [ ] Hook up title and blurb overrides
+- [ ] Add getting started info
+- [x] Add support for links in content
 - [x] Add location page
 - [x] Add activities page
 - [x] Add wedding page
@@ -22,8 +24,6 @@
 - [x] Create Airtable [source plugin][2]
 - [x] [Create pages][1] for each guest
 - [x] Override images and titles
-- [ ] Hook up title and blurb overrides
-- [ ] Add getting started info
 
 
 [1]:https://www.gatsbyjs.org/docs/creating-and-modifying-pages/

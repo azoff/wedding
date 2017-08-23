@@ -18,12 +18,12 @@
     "gatsby-plugin-typography": "^1.7.6",
     "gatsby-source-filesystem": "^1.4.4",
     "gatsby-transformer-json": "^1.0.3",
+    "gh-pages": "^1.0.0",
     "lodash": "^4.17.4",
     "marked": "^0.3.6",
     "prettier": "^1.5.3",
     "react-slick": "^0.14.11",
-    "slick-carousel": "^1.7.1",
-    "surge": "^0.19.0"
+    "slick-carousel": "^1.7.1"
   },
   "keywords": [
     "gatsby"
@@ -31,7 +31,7 @@
   "license": "MIT",
   "main": "n/a",
   "scripts": {
-    "deploy": "surge public --domain deep-nubz.surge.sh",
+    "deploy": "gh-pages -d public",
     "patch": "sed -i -e 's/if(c\\.initial) return;/if(!c||c.initial) return;/g' ./node_modules/extract-text-webpack-plugin/index.js",
     "build": "npm run patch && gatsby build",
     "develop": "NODE_PATH=./src gatsby develop",
