@@ -1,14 +1,13 @@
 [
 	{
 		"title": "We can't wait to celebrate with you!",
-		"blurb": "May 27, 2018 is a celebration of our love that has blossomed over the past five+ years and a commitment to the years and milestones ahead./n May 27, 2018 is a celebration of the people we hold closest to our hearts. Your love and friendship have helped us become who we are today, as individuals and as a couple. We are blessed to know you will be there for the exciting years ahead. /n We hope you can join us to share our joy and support our love, as we exchange vows and celebrate our marriage. /n Check back for updates!/n /n Love,/n Jonathan & Carolyn",
+		"blurb": "May 27, 2018 is a celebration of our love that has blossomed over the past five+ years and a commitment to the years and milestones ahead.\n\nMay 27, 2018 is a celebration of the people we hold closest to our hearts. Your love and friendship have helped us become who we are today, as individuals and as a couple. We are blessed to know you will be there for the exciting years ahead.\n\nWe hope you can join us to share our joy and support our love, as we exchange vows and celebrate our marriage.\n\nCheck back for updates!\n\nLove,\nJonathan & Carolyn",
 		"imageUrl": "images/hero-default.jpg"
 	},
 	{
 		"id": "location",
 		"title": "Suncadia, Cle Elum, Washington",
-		"blurb": "Suncadia is a beautiful, adventure-filled wilderness resort 1.5 hours east of Seattle. \n May 27 is the Sunday of Memorial Day weekend. Be sure to make your travel accommodations (flight, car, lodging) ahead of time. 
-",
+		"blurb": "Suncadia is a beautiful, adventure-filled wilderness resort 1.5 hours east of Seattle.\n\nMay 27 is the Sunday of Memorial Day weekend. Be sure to make your travel accommodations (flight, car, lodging) ahead of time.",
 		"imageUrl": "images/suncadia-arial.jpg",
 		"link": {
 			"to": "/location",
@@ -19,42 +18,29 @@
 				"title": "Getting There",
 				"subtitle": "arrive safe and sound",
 				"imageUrl": "images/suncadia-the-lookout.jpg",
-				"fragment": "ceremony",
-				"blurb": "May 27, 2018 is the Sunday of Memorial Day weekend. We recommend you plan and make any necessary reservations sooner-rather-than-later.\n__GETTING TO SUNCADIA__\n Nearest Airport: SeaTac Airport\n Suncadia is approximately 1.5 hours east of Seattle (on Washington Interstate I-90, East Bound)\n - Rental cars are available at SeaTac airport\n\n\n - Shuttles are available from SeaTac to Suncadia [Airporter](http://www.airporter.com/shuttle/cle-elum-to-seatac-airport-seattle)\n\n\n\n\n__LEAVING SUNCADIA__\n We will never want the long-weekend to end! When the time comes, remember that you may run into traffic. Please plan driving time accordingly.\n
-",
-				"link": {
-					"href": "http://todo.com",
-					"children": "Learn More »"
-				}
+				"fragment": "getting_there",
+				"blurb": "May 27, 2018 is the Sunday of Memorial Day weekend. We recommend you plan and make any necessary reservations sooner-rather-than-later.\n\n### GETTING TO SUNCADIA\nNearest Airport: SeaTac Airport\nSuncadia is approximately 1.5 hours east of Seattle (on Washington Interstate I-90, East Bound)\n\n- Rental cars are available at SeaTac airport\n- [Airporter Shuttles](http://www.airporter.com/shuttle/cle-elum-to-seatac-airport-seattle) are available from SeaTac to Suncadia\n\n### LEAVING SUNCADIA\nWe will never want the long-weekend to end! When the time comes, remember that you may run into traffic. Please plan driving time accordingly."
 			},
 			{
 				"title": "Getting Around",
 				"subtitle": "explore the area",
 				"imageUrl": "images/suncadia-the-amphitheater.jpg",
-				"fragment": "reception",
-				"blurb": "If you are staying at Suncadia Resort, there are walking/running/biking trails all around the resort (plus golf, swimming, spa, wine tasting, and more). [Click here](https://www.destinationhotels.com/suncadia-resort/activities)\n for more details. \n There is also a free intra-resort shuttle service that can bring you to/from all events and activities. \n If you are staying outside of Suncadia, there are a couple local taxis available. Uber and Lyft are limited. - K.C. Cab: (509) 929-3055\n\n\n",
-				"link": {
-					"href": "http://todo.com",
-					"children": "Learn More »"
-				}
+				"fragment": "getting_around",
+				"blurb": "If you are staying at Suncadia Resort, there are walking/running/biking trails all around the resort (plus golf, swimming, spa, wine tasting, and more). [Click here](https://www.destinationhotels.com/suncadia-resort/activities) for more details.\n\nThere is also a free intra-resort shuttle service that can bring you to/from all events and activities.\n\nIf you are staying outside of Suncadia, there are a couple local taxis available. Uber and Lyft are limited. - K.C. Cab: (509) 929-3055"
 			},
 			{
 				"title": "Where to Stay",
 				"subtitle": "in and around Suncadia",
 				"imageUrl": "images/suncadia-the-lodge.jpg",
-				"fragment": "resort",
-				"blurb": "All wedding festivities will be held in Suncadia Resort proper, therefore we recommend either staying in the resort or as close as possible to the action. /n/n ###LODGING AT SUNCADIA RESORT###\n*Staying at Sunadia Resort will likely be the most convenient.*\n\n__[The Lodge](https://www.destinationhotels.com/suncadia-resort/accommodations/cle-elum-lodging)__\n\n__[The Inn](https://www.destinationhotels.com/suncadia-resort/accommodations/washington-state-lodging)__\n\n__[Trailhead Condominiums](https://www.destinationhotels.com/suncadia-resort/accommodations/vacation-rentals-washington-state)__\n\n__Vacation Homes__\n- [VRBO](http://www.vrbo.com/)\n and [Airbnb](http://www.airbnb.com/)\n tend to have better prices (especially if rented 'by owner') and availability that opens up before the Suncadia website. And many of the vacation homes are listed on both websites. Make sure the house location is Suncadia, Cle Elum, WA.- Suncadia's [reservation website for vacation homes](https://www.destinationhotels.com/suncadia-resort/rental-homes-and-condos) \n\n\n\n\n###OTHER PLACES NEARBY###\n*There are many places to stay in and around Suncadia Resort.*\n\n__[Best Western](https://www.bestwestern.com/en_US/book/hotels-in-cle-elum/best-western-snowcap-lodge/propertyCode.48161.html)\n (5 miles from Suncadia)__\n__[Timber Lodge](http://www.timberlodgeinn.com/)\n (~7 miles from Suncadia)__\n__Cabins & Houses__\n Other [Airbnb](http://www.airbnb.com/)\n, [VRBO](http://www.vrbo.com/)\n and [FlipKey](http://www.flipkey.com/)\n cabins/houses in the nearby area.\n",
-				"link": {
-					"href": "http://todo.com",
-					"children": "Learn More »"
-				}
+				"fragment": "where_to_stay",
+				"blurb": "All wedding festivities will be held in Suncadia Resort proper, therefore we recommend either staying in the resort or as close as possible to the action. \n\n### LODGING AT SUNCADIA RESORT\n*Staying at Sunadia Resort will be the most convenient.*\n\n[The Lodge](https://www.destinationhotels.com/suncadia-resort/accommodations/cle-elum-lodging)\n[The Inn](https://www.destinationhotels.com/suncadia-resort/accommodations/washington-state-lodging)\n[Trailhead Condominiums](https://www.destinationhotels.com/suncadia-resort/accommodations/vacation-rentals-washington-state)\nVacation Homes\n- [VRBO](http://www.vrbo.com/) and [Airbnb](http://www.airbnb.com/) tend to have better prices (especially if rented 'by owner') and availability that opens up before the Suncadia website. And many of the vacation homes are listed on both websites. Make sure the house location is Suncadia, Cle Elum, WA.\n- Suncadia's [reservation website for vacation homes](https://www.destinationhotels.com/suncadia-resort/rental-homes-and-condos) \n\n\n### OTHER PLACES NEARBY\n*There are many places to stay in and around Suncadia Resort.*\n\n[Best Western](https://www.bestwestern.com/en_US/book/hotels-in-cle-elum/best-western-snowcap-lodge/propertyCode.48161.html) (5 miles from Suncadia)\n[Timber Lodge](http://www.timberlodgeinn.com/) (~7 miles from Suncadia)\nCabins & Houses\n- Other [Airbnb](http://www.airbnb.com/), [VRBO](http://www.vrbo.com/) and [FlipKey](http://www.flipkey.com/) cabins/houses in the nearby area."
 			}
 		]
 	},
 	{
 		"id": "activities",
 		"title": "Things to Do",
-		"blurb": "Call us a progressive couple – Jonathan was the one to [pick up a wedding planning book](https://www.amazon.com/Man-Nup-Grooms-Wedding-Planning/dp/1530210658)\n (and read it cover to cover). One of the guiding principals of the book was to have a mantra that could ground us throughout the potential craziness of wedding planning.  Our mantra: LOVE. \n This mantra supported our choice to have our special day at a location where our most special people can spend time together – connect with close friends and family, reconnect with old ones, and make new ones.  We also acknowledge that this takes extra effort, time and funds on your part…so once you make it, we want to make sure you feel taken care of and have plenty to do (or not do).",
+		"blurb": "Call us a progressive couple – Jonathan was the one to pick up [a wedding planning book](https://www.amazon.com/Man-Nup-Grooms-Wedding-Planning/dp/1530210658) (and read it cover to cover). One of the guiding principals of the book was to have a mantra that could ground us throughout the potential craziness of wedding planning.  Our mantra: LOVE.\n\nThis mantra supported our choice to have our special day at a location where our most special people can spend time together – connect with close friends and family, reconnect with old ones, and make new ones.  We also acknowledge that this takes extra effort, time and funds on your part… so once you make it, we want to make sure you feel taken care of and have plenty to do (or not do).",
 		"imageUrl": "images/suncadia-activities.jpg",
 		"link": {
 			"to": "/activities",
@@ -64,42 +50,30 @@
 			{
 				"title": "go play",
 				"subtitle": "golf, hikes, and more",
-[				"imageUrl": "images/suncadia-golf.jpg",
+				"imageUrl": "images/suncadia-golf.jpg",
 				"fragment": "play",
-				"blurb": "Suncadia is the epitome of what’s best about the Pacific Northwest (Washington is Carolyn’s home state). It also offers the hiking, fishing, walking trails (and wine!) that are some of Jonathan’s favorite things. Together, we love to go on long walks to connect – and virtually everything is walk-able around Suncadia./n  Here are a few of our recommendations if you’re looking for something to do./n",
-				"link": {
-					"href": "http://todo.com",
-					"children": "Get Excited »"
-				}
+				"blurb": "Suncadia is the epitome of what’s best about the Pacific Northwest (Washington is Carolyn’s home state). It also offers the hiking, fishing, walking trails (and wine!) that are some of Jonathan’s favorite things. Together, we love to go on long walks to connect – and virtually everything is walk-able around Suncadia.\n\nHere are a few of our recommendations if you're looking for something to do."
 			},
 			{
 				"title": "eat, drink",
-				"subtitle": "SF foodies, we're looking at you",
-				"imageUrl": "images/suncadia-dining.jpg",
+				"subtitle": "and be married",
+				"imageUrl": "images/Cheers_J&C.png",
 				"fragment": "dine",
-				"blurb": "[Swiftwater Cellars] (https://www.swiftwatercellars.com/)/n: Grab a beer or glass of wine on the outdoor patio.",/n ![image](src/images/Cheers_J&C.png)
-				"link": {
-					"href": "http://todo.com",
-					"children": "Learn More »"
-				}
+				"blurb": "[Swiftwater Cellars](https://www.swiftwatercellars.com/): Grab a beer or glass of wine on the outdoor patio. Cheers!"
 			},
 			{
 				"title": "kick back, relax",
 				"subtitle": "treat yourself",
 				"imageUrl": "images/suncadia-spa.jpg",
 				"fragment": "relax",
-				"blurb": "###Spa###/nTreat yourself! Suncadia has a very nice spa onsite ([Glade Spring Spa](https://www.destinationhotels.com/suncadia-resort/spa/washington-spa-services))/n, with massage services, facials, detox pools, and more./n ![image](src/images/C&J_Spa.png)"/n/n/n ###Bonfires (and s’mores)###/nCarolyn has an admitted sweet tooth…and Jonathan will pretend that he doesn’t. But there is something we both love about bonfires and golden brown s’mores.  Look out for bonfires throughout the resort – near the Amphitheater, The Inn, and The Lodge./n ![image](src/images/C&J_beach.png)"/n/n/n",
-				"link": {
-					"href": "http://todo.com",
-					"children": "Learn More »"
-				}
+				"blurb": "### Spa\nTreat yourself! Suncadia has [a very nice spa](https://www.destinationhotels.com/suncadia-resort/spa/washington-spa-services) onsite, with massage services, facials, detox pools, and more.\n\n![image](https://github.com/azoff/wedding/raw/master/src/images/C&J_Spa.png)\n\n\n### Bonfires (and S’Mores)\nCarolyn has an admitted sweet tooth… and Jonathan will pretend that he doesn’t. But there is something we both love about bonfires and golden brown 'mallows. Look out for bonfires throughout the resort – near the Amphitheater, The Inn, and The Lodge.\n\n![image](https://github.com/azoff/wedding/raw/master/src/images/C&J_beach.png)"
 			}
 		]
 	},
 	{
 		"id": "wedding",
 		"title": "A Wedding in Washington",
-		"blurb": "We are humbled and thrilled that so many of our friends and family will be traveling near and far to join us in Cle Elum, WA over Memorial Day Weekend./n/nIt makes our hearts so happy to think about our closest friends and family spending the long weekend together, sharing in our joy and supporting our love as we exchange vows and celebrate our marriage./n",
+		"blurb": "We are humbled and thrilled that so many of our friends and family will be traveling near and far to join us in Cle Elum, WA over Memorial Day Weekend.\n\nIt makes our hearts so happy to think about our closest friends and family spending the long weekend together, sharing in our joy and supporting our love as we exchange vows and celebrate our marriage.",
 		"imageUrl": "images/wedding-hall.jpg",
 		"link": {
 			"to": "/wedding",
@@ -111,82 +85,29 @@
 				"subtitle": "dates, times, places",
 				"imageUrl": "images/wedding-alter.jpg",
 				"fragment": "schedule",
-				"component": "",
-				"blurb": "###Golf Round Robin###/n*more detais to come.*/n__Date:__ Saturday, May 26, 2018/n __Location:__ TBD/n __Time:__ TBD/n __Attire:__ golf attire/n /n/n/n ###WELCOME DRINKS###/n *We can’t wait until Sunday to see you. Join us for a casual gathering for drinks and light snacks.*/n/n__Date:__ Saturday, May 26, 2018/n __Location:__ TBD/n __Time:__ evening (TBD)/n __Attire:__ casual/n /n/n/n###THE MAIN EVENT ("I Do!")/n*check back for more details.*/n/n__CEREMONY__/n__Date:__ Sunday, May 27, 2018/n __Location:__ The Lookout (Suncadia)/n __Time:__ late afternoon (TBD)/n __Attire:__ cocktail attire /n ![image](src/images/ceremony.png) /n/n__RECEPTION__/n__Date:__Sunday, May 27, 2018/n __Location:__ The Amphitheater (Suncadia)/n __Time:__ immediately following ceremony (TBD)/n __Attire:__ cocktail attire/n ![image](src/images/reception.png) /n/n/n###Post-Wedding Brunch###/n Cure the hangover, reminisce about fun times the night before, and fill your stomachs before hitting the road./n *More details to come.*/n__Date:__ Monday, May 28, 2018/n __Location:__ TBD/n __Time:__ ~9am/n __Attire:__ casual /n ",
-				"link": {
-					"href": "http://todo.com",
-					"children": "Learn More »"
-				}
+				"blurb": "### Golf Round Robin\n__Date:__ Saturday, May 26, 2018\n__Location:__ TBD\n__Time:__ TBD\n__Attire:__ Golf (Duh!)\n\n### WELCOME DRINKS\nWe can’t wait until Sunday to see you. Join us for a casual gathering for drinks and light snacks.\n\n__Date:__ Saturday, May 26, 2018\n__Location:__ TBD\n__Time:__ Evening (TBD)\n__Attire:__ Casual\n\n\n### WEDDING CEREMONY\n__Date:__ Sunday, May 27, 2018\n__Location:__ The Lookout (Suncadia)\n__Time:__ Late Afternoon (TBD)\n__Attire:__ Cocktail\n\n### WEDDING RECEPTION\n__Date:__ Sunday, May 27, 2018\n__Location:__ The Amphitheater (Suncadia)\n__Time:__ Immediately following ceremony (TBD)\n__Attire:__ Cocktail\n\n### Post-Wedding Brunch\nCure the hangover, reminisce about fun times the night before, and fill your stomachs before hitting the road.\n\n__Date:__ Monday, May 28, 2018\n__Location:__ TBD\n__Time:__ ~9am\n__Attire:__ Casual\n\n*Check back soon for more updates!*"
 			},
 			{
 				"title": "The two of us",
 				"subtitle": "all the mushy stuff",
 				"imageUrl": "images/wedding-us.jpg",
 				"fragment": "story",
-				"component": null,
-				"blurb": "We have very intentionally planned our wedding to be a celebration of our love and life together – and a gathering of those who have been and will be a part of our lives the whole way through. /n This means that if you’re on the invite list, you’re among the nearest and dearest to our hearts.  So, we are not going to share with you a novel of our “story” and who we are, but below are a few things that may surprise even you!/n###We Have The Travel Bug###/n __X__: the number of countries Jonathan has visited (and he tries to learn the basics of each language before visiting each country)./n __X__: the number of countries Carolyn has visited./n __X__: the number of countries Jonathan have traveled to together./n/n ###Our Middle Names###/n Jonathan Hait Azoff/n __Hai__: The Hebrew (Chai) for “Life”./n Carolyn May Thayer/n __May__: After Carolyn’s paternal great grandmother, Constance May McMillan./n###Friends First###/nJonathan and Carolyn were good friends before they started dating. In fact, they initially bonded over being single - Carolyn and Jonathan recapped and planned dates with each other…Carolyn even dropped Jonathan of at a date or two (until she started getting jealous…then that stopped)!/n ![image](src/images/C&J_color run friends.png)/n/n ###The Proposal###/n Jonathan proposed to Carolyn at SeaTac airport. This is best kept as a story told in-person! ![image](src/images/SeaTac Proposal.png)![image](src/images/SeaTac Proposal 2.png) ",
-				"link": {
-					"href": "http://todo.com",
-					"children": "Learn More »"
-				}
+				"blurb": "We have very intentionally planned our wedding to be a celebration of our love and life together – and a gathering of those who have been and will be a part of our lives the whole way through.\n\nThis means that if you’re on the invite list, you’re among the nearest and dearest to our hearts.  So, we are not going to share with you a novel of our “story” and who we are, but below are a few things that may surprise even you!\n\n### We Have The Travel Bug\n\n__18__: The number of countries Jonathan has visited (and he tries to learn the basics of each language before visiting each country).\n__26__: The number of countries Carolyn has visited.\n__10__: The number of countries Jonathan have traveled to together (and counting!).\n\n### Our Middle Names\nJonathan Hai Azoff\n__Hai__: The Hebrew (Chai) for “Life”.\n\nCarolyn May Thayer\n__May__: After Carolyn’s paternal great grandmother, Constance May McMillan.\n\n### Friends First\nJonathan and Carolyn were good friends before they started dating. In fact, they initially bonded over being single. Carolyn and Jonathan would recap and plan dates with each other. Carolyn even dropped Jonathan off at a date or two (until she started getting jealous… then that stopped!).\n![image](https://raw.githubusercontent.com/azoff/wedding/master/src/images/C%26J_color%20run%20friends.png)\n\n### The Proposal\nJonathan proposed to Carolyn at SeaTac airport. This is best kept as a story told in-person! \n![image](https://raw.githubusercontent.com/azoff/wedding/master/src/images/SeaTac%20Proposal.png)\n![image](https://raw.githubusercontent.com/azoff/wedding/master/src/images/SeaTac%20Proposal%202.png) "
 			},
 			{
 				"title": "wedding party",
 				"subtitle": "our BFFs",
 				"imageUrl": "images/wedding-shoes.jpg",
 				"fragment": "party",
-				"component": null,
-				"blurb": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-				"link": {
-					"href": "http://todo.com",
-					"children": "Learn More »"
-				}
+				"blurb": "Coming Soon!",
+				"component": ""
 			}
 		]
 	},
 	{
 		"id": "registry",
 		"title": "Our Wedding Registry",
-		"blurb": "*More details to come!*",
-		"imageUrl": "images/registry-header.jpg",
-		"link": {
-			"to": "/registry",
-			"children": "See options »"
-		},
-		"facets": [
-			{
-				"title": "houseware",
-				"subtitle": "williams and sonoma",
-				"imageUrl": "images/registry-kitchen.jpg",
-				"fragment": "houseware",
-				"blurb": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-				"link": {
-					"href": "http://todo.com",
-					"children": "Learn More »"
-				}
-			},
-			{
-				"title": "honeymoon",
-				"subtitle": "here we go!",
-				"imageUrl": "images/registry-honeymoon.jpg",
-				"fragment": "honeymoon",
-				"blurb": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-				"link": {
-					"href": "http://todo.com",
-					"children": "Learn More »"
-				}
-			},
-			{
-				"title": "everything else",
-				"subtitle": "charities and causes",
-				"imageUrl": "images/registry-activities.jpg",
-				"fragment": "other",
-				"blurb": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-				"link": {
-					"href": "http://todo.com",
-					"children": "Learn More »"
-				}
-			}
-		]
+		"blurb": "*Stay tuned! More details coming soon.*",
+		"imageUrl": "images/registry-header.jpg"
 	}
 ]
