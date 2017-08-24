@@ -20,6 +20,7 @@
     "gatsby-transformer-json": "^1.0.2",
     "gh-pages": "^1.0.0",
     "lodash": "^4.17.4",
+    "marked": "^0.3.6",
     "prettier": "^1.5.2",
     "react-slick": "^0.14.11",
     "slick-carousel": "^1.7.1"
