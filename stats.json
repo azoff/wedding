@@ -69,8 +69,8 @@
       "path---wedding-c80a1853dfe2b4752346.js.map"
     ],
     "component---src-pages-index-js": [
-      "component---src-pages-index-js-97f9424fc12e68582544.js",
-      "component---src-pages-index-js-97f9424fc12e68582544.js.map"
+      "component---src-pages-index-js-df4bb42c30cb8388872a.js",
+      "component---src-pages-index-js-df4bb42c30cb8388872a.js.map"
     ],
     "path---aloha": [
       "path---aloha-716cc7e56e3261b5407b.js",
@@ -285,8 +285,8 @@
       "path---smash-bba5fbe72ac7bba668fa.js.map"
     ],
     "component---src-layouts-index-js": [
-      "component---src-layouts-index-js-f670057f6db07d9bce49.js",
-      "component---src-layouts-index-js-f670057f6db07d9bce49.js.map"
+      "component---src-layouts-index-js-8afb69aa10639f7f057f.js",
+      "component---src-layouts-index-js-8afb69aa10639f7f057f.js.map"
     ],
     "path---roomies": [
       "path---roomies-f9d5fab5f58b8539f204.js",
@@ -429,8 +429,8 @@
       "path---nguyens-f98e93514911a0688fbf.js.map"
     ],
     "component---src-pages-404-js": [
-      "component---src-pages-404-js-8bc3c0b1f2e45fb8d20b.js",
-      "component---src-pages-404-js-8bc3c0b1f2e45fb8d20b.js.map"
+      "component---src-pages-404-js-c44c205d41128f6f99d8.js",
+      "component---src-pages-404-js-c44c205d41128f6f99d8.js.map"
     ],
     "path---gsr": [
       "path---gsr-7791de94cb5e25fb6b47.js",
@@ -443,10 +443,6 @@
     "path---blochs": [
       "path---blochs-d63ea577815feeb2b106.js",
       "path---blochs-d63ea577815feeb2b106.js.map"
-    ],
-    "commons": [
-      "build-js-styles.css",
-      "build-js-styles.css.map"
     ],
     "path---da": [
       "path---da-57354f7851aa80495728.js",
@@ -573,10 +569,8 @@
       "path---ljj-25ae58f66b2d2fe399ae.js.map"
     ],
     "app": [
-      "app-a6e7ac9c59650d968678.js",
-      "build-js-styles.css",
-      "app-a6e7ac9c59650d968678.js.map",
-      "build-js-styles.css.map"
+      "app-0cd28f30119a7ddb5179.js",
+      "app-0cd28f30119a7ddb5179.js.map"
     ],
     "path---sst": [
       "path---sst-7b2313186ba34a03e8b3.js",
