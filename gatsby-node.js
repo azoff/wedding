@@ -7,7 +7,9 @@ const CommonsChunkPlugin = require('webpack/lib/optimize/CommonsChunkPlugin')
 
 exports.modifyWebpackConfig = ({ config, stage }) => {
   config._config.resolve.modulesDirectories.push('./src')
-  console.log('RESOLVE', config._config.resolve)
+  config._config.resolve.extensions.push('.png')
+  config._config.resolve.extensions.push('.jpg')
+  config._config.resolve.extensions.push('.jpeg')
   const plugins = []
   config._config.plugins.forEach((plugin, i) => {
     if (plugin instanceof CommonsChunkPlugin) return // disabling this optimization
