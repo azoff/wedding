@@ -14,7 +14,7 @@ class Section extends React.Component {
         {this.renderImages()}
         <div className={styles.sectionContent}>
           {this.renderTitle()}
-          <div rel="markdown" dangerouslySetInnerHTML={{ __html: marked(this.props.blurb) }} />
+          {this.renderBlurb()}
           {this.renderLink()}
         </div>
         {this.renderFacetContainer()}
@@ -94,6 +94,12 @@ class Section extends React.Component {
         {title}
       </h2>
     )
+  }
+  renderBlurb() {
+    const c = this.props.customizations
+    const m = c && c.blurbOverride || this.props.blurb
+    const __html = marked(m)
+    return <div rel="markdown" dangerouslySetInnerHTML={{ __html }} />
   }
   renderLink() {
     if (this.props.link) {

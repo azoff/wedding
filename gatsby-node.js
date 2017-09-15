@@ -36,9 +36,11 @@ exports.sourceNodes = ({ boundActionCreators }) => {
           const [ additionFirstName ] = record.get('Addition Informal Name') || []
           const [ includingNames ] = record.get('Including') || []
           const heroImages = (record.get('Hero Image') || []).map(({ url }) => url)
+          const blurbOverride = record.get('Blurb Override')
 
           const content = JSON.stringify(record)
           const contentDigest = crypto.createHash('md5').update(content).digest('hex')
+
           createNode({
             slug,
             customizations: {
@@ -46,6 +48,7 @@ exports.sourceNodes = ({ boundActionCreators }) => {
               additionFirstName,
               includingNames,
               heroImages,
+              blurbOverride,
             },
             id: `AirtableRecord.${record.id}`,
             parent: '__SOURCE__',
