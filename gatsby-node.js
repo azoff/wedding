@@ -36,7 +36,7 @@ exports.sourceNodes = ({ boundActionCreators }) => {
           const [ additionFirstName ] = record.get('Addition Informal Name') || []
           const [ includingNames ] = record.get('Including') || []
           const heroImages = (record.get('Hero Image') || []).map(({ url }) => url)
-          const blurbOverride = record.get('Blurb Override')
+          const blurbOverride = record.get('Blurb Override') || ''
 
           const content = JSON.stringify(record)
           const contentDigest = crypto.createHash('md5').update(content).digest('hex')
