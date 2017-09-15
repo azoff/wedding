@@ -51,7 +51,7 @@ class Section extends React.Component {
       variableWidth: false,
       className: styles.sectionSlider,
       autoplay: urls.length > 1,
-      autoplaySpeed: 5000,
+      autoplaySpeed: 3000,
       dots: urls.length > 1,
       dotsClass: styles.sectionSliderDots,
       infinite: urls.length > 1,
