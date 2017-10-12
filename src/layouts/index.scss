@@ -10,6 +10,10 @@
 	position: relative;
 }
 
+.layout {
+	transition: opacity 1000ms ease 500ms;
+}
+
 @media (max-width: $size-breakpoint-mobile) {
 	html {
 		font-size: 75%;

@@ -25,12 +25,12 @@ a {
 
 .LazyLoad {
 	height: 60vh !important;
-  min-height: $size-breakpoint-min;
+	min-height: $size-breakpoint-min;
 	overflow: hidden;
-  margin-bottom: 2.4rem;
-  background-color: fade-out(black, 0.9);
-  transition: background-color 500ms;
-  &.is-visible {
-  	background-color: fade-out(black, 1);
-  }
+	margin-bottom: 2.4rem;
+	background-color: fade-out(black, 0.9);
+	transition: background-color 500ms;
+	&.is-visible {
+		background-color: fade-out(black, 1);
+	}
 }

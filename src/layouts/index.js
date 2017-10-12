@@ -6,14 +6,23 @@ import Footer from 'components/Footer'
 import './index.scss'
 
 class IndexLayout extends React.Component {
+  constructor() {
+    super()
+    this.state = { opacity: 0 }
+  }
+
   render() {
     return (
-      <div>
+      <div className="layout" style={this.state}>
         <Header {...this.props.data.header} />
         {this.props.children()}
         <Footer {...this.props.data.footer} />
       </div>
     )
+  }
+
+  componentDidMount() {
+    this.setState({ opacity: 1 })
   }
 }
 
