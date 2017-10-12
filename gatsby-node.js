@@ -36,6 +36,7 @@ exports.sourceNodes = ({ boundActionCreators }) => {
           const [ additionFirstName ] = record.get('Addition Informal Name') || []
           const [ includingNames ] = record.get('Including') || []
           const heroImages = (record.get('Hero Image') || []).map(({ url }) => url)
+          const salutationOverride = record.get('Salutation Override') || ''
           const blurbOverride = record.get('Blurb Override') || ''
 
           const content = JSON.stringify(record)
@@ -48,6 +49,7 @@ exports.sourceNodes = ({ boundActionCreators }) => {
               additionFirstName,
               includingNames,
               heroImages,
+              salutationOverride,
               blurbOverride,
             },
             id: `AirtableRecord.${record.id}`,

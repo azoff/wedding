@@ -73,24 +73,28 @@ class Section extends React.Component {
     let title = this.props.title
     const customizations = this.props.customizations
     if (customizations) {
-      let suffix,
-        names = []
-      if (customizations.guestFirstName) {
-        names.push(customizations.guestFirstName)
-      }
-      if (customizations.additionFirstName) {
-        names.push(customizations.additionFirstName)
-      }
-      if (customizations.includingNames) {
-        names.push(customizations.includingNames)
-        if (customizations.includingNames.indexOf('and ') < 0) {
-          names.push(`and ${customizations.includingNames}`)
-        }
-        suffix = names.join(', ')
+      if (customizations.salutationOverride) {
+        title = customizations.salutationOverride
       } else {
-        suffix = names.join(' and ')
+        let suffix,
+          names = []
+        if (customizations.guestFirstName) {
+          names.push(customizations.guestFirstName)
+        }
+        if (customizations.additionFirstName) {
+          names.push(customizations.additionFirstName)
+        }
+        if (customizations.includingNames) {
+          names.push(customizations.includingNames)
+          if (customizations.includingNames.indexOf('and ') < 0) {
+            names.push(`and ${customizations.includingNames}`)
+          }
+          suffix = names.join(', ')
+        } else {
+          suffix = names.join(' and ')
+        }
+        title = title.replace(/(\W?$)/, ` ${suffix}$1`)
       }
-      title = title.replace(/(\W?$)/, ` ${suffix}$1`)
     }
     return (
       <h2>
