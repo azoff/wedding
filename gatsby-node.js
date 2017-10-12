@@ -3,19 +3,19 @@ const crypto = require('crypto')
 const path = require('path')
 const tab = 'Website Data'
 const view = 'Main View'
-// const CommonsChunkPlugin = require('webpack/lib/optimize/CommonsChunkPlugin')
+const CommonsChunkPlugin = require('webpack/lib/optimize/CommonsChunkPlugin')
 
 exports.modifyWebpackConfig = ({ config, stage }) => {
   config._config.resolve.modulesDirectories.push('./src')
   config._config.resolve.extensions.push('.png')
   config._config.resolve.extensions.push('.jpg')
   config._config.resolve.extensions.push('.jpeg')
-  // const plugins = []
-  // config._config.plugins.forEach((plugin, i) => {
-  //   if (plugin instanceof CommonsChunkPlugin) return // disabling this optimization
-  //   else plugins.push(plugin)
-  // })
-  // config._config.plugins = plugins
+  const plugins = []
+  config._config.plugins.forEach((plugin, i) => {
+    if (plugin instanceof CommonsChunkPlugin) return // disabling this optimization
+    else plugins.push(plugin)
+  })
+  config._config.plugins = plugins
   return config
 }
 
