@@ -6,18 +6,19 @@ import SubSection from 'components/SubSection'
 import styles from './index.module.scss'
 import Slider from 'react-slick'
 import marked from 'marked'
+import LazyLoad from 'react-lazy-load'
 
 class Section extends React.Component {
   render() {
     return (
       <section className={styles.section}>
-        {this.renderImages()}
-        <div className={styles.sectionContent}>
-          {this.renderTitle()}
-          {this.renderBlurb()}
-          {this.renderLink()}
-        </div>
-        {this.renderFacetContainer()}
+          {this.renderImages()}
+          <div className={styles.sectionContent}>
+            {this.renderTitle()}
+            {this.renderBlurb()}
+            {this.renderLink()}
+          </div>
+          {this.renderFacetContainer()}
       </section>
     )
   }
@@ -61,9 +62,11 @@ class Section extends React.Component {
       slidesToShow: 1,
     }
     return (
-      <Slider {...settings}>
-        {this.renderSliderImages(urls)}
-      </Slider>
+      <LazyLoad offset={750} throttle={100}>
+        <Slider {...settings}>
+          {this.renderSliderImages(urls)}
+        </Slider>
+      </LazyLoad>
     )
   }
   renderTitle() {

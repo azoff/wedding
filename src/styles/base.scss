@@ -22,3 +22,9 @@ a {
 		outline: none;
 	}
 }
+
+.LazyLoad {
+	height: 60vh !important;
+  min-height: $size-breakpoint-min;
+  margin-bottom: 2.4rem;
+}
