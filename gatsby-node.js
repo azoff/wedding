@@ -3,19 +3,19 @@ const crypto = require('crypto')
 const path = require('path')
 const tab = 'Website Data'
 const view = 'Main View'
-const CommonsChunkPlugin = require('webpack/lib/optimize/CommonsChunkPlugin')
+// const CommonsChunkPlugin = require('webpack/lib/optimize/CommonsChunkPlugin')
 
 exports.modifyWebpackConfig = ({ config, stage }) => {
   config._config.resolve.modulesDirectories.push('./src')
   config._config.resolve.extensions.push('.png')
   config._config.resolve.extensions.push('.jpg')
   config._config.resolve.extensions.push('.jpeg')
-  const plugins = []
-  config._config.plugins.forEach((plugin, i) => {
-    if (plugin instanceof CommonsChunkPlugin) return // disabling this optimization
-    else plugins.push(plugin)
-  })
-  config._config.plugins = plugins
+  // const plugins = []
+  // config._config.plugins.forEach((plugin, i) => {
+  //   if (plugin instanceof CommonsChunkPlugin) return // disabling this optimization
+  //   else plugins.push(plugin)
+  // })
+  // config._config.plugins = plugins
   return config
 }
 
@@ -70,66 +70,6 @@ exports.sourceNodes = ({ boundActionCreators }) => {
   });
 }
 
-// exports.sourceNodes = ({ boundActionCreators }) => {
-//   const { createNode } = boundActionCreators
-//   return new Promise((resolve, reject) => {
-//     const records = [
-//       {
-//         id: 'record1',
-//         slug: 'pudge',
-//         guestFirstName: 'Jim',
-//         additionFirstName: 'Patti',
-//         includingNames: 'Anne-Marie and Alex',
-//         heroImages: ['images/C&J_beach.png', 'images/C&J_Spa.png', 'images/Cheers_J&C.png']
-//       }
-//     ]
-//     records.forEach(function(record) {
-//       const content = JSON.stringify(record)
-//       const contentDigest = crypto.createHash('md5').update(content).digest('hex')
-//       createNode({
-//         slug: record.slug,
-//         customizations: record,
-//         id: `AirtableRecord.${record.id}`,
-//         parent: '__SOURCE__',
-//         children: [],
-//         internal: {
-//           type: 'AirtableRecord',
-//           contentDigest,
-//           content
-//         },
-//       })
-//     });
-//     resolve()
-//   });
-// }
-
-function createIndexPages(createPage) {
-  return new Promise((resolve, reject) => {
-    graphql(`{
-      allAirtableRecord {
-        edges {
-          node {
-            id
-            slug
-          }
-        }
-      }
-    }`).then(result => {
-
-      if (result.errors) {
-        reject(result.errors)
-      }
-
-      const component = path.resolve('src/pages/index.js')
-      result.data.allAirtableRecord.edges.forEach(({ node: context }) => {
-        createPage({ path: context.slug, component, context })
-      })
-
-      resolve(result)
-    })
-  })
-}
-
 function createIndexPages(graphql, createPage) {
   return new Promise((resolve, reject) => {
     graphql(`{
@@ -142,11 +82,12 @@ function createIndexPages(graphql, createPage) {
         }
       }
     }`).then(result => {
+
       if (result.errors) {
         reject(result.errors)
       }
 
-      const component = path.resolve('src/pages/index.js')
+      const component = path.resolve('src/templates/index.js')
       result.data.allAirtableRecord.edges.forEach(({ node: context }) => {
         createPage({ path: context.slug, component, context })
       })

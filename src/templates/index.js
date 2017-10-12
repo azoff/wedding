@@ -27,7 +27,7 @@ class IndexPage extends React.Component {
 export default IndexPage
 
 export const pageQuery = graphql`
-  query RootPageQuery {
+  query IndexPageQuery($id: String = "") {
     allSectionJson {
       edges {
         node {
@@ -45,6 +45,16 @@ export const pageQuery = graphql`
             fragment
           }
         }
+      }
+    }
+    airtableRecord(id: { eq: $id }) {
+      customizations {
+        guestFirstName
+        additionFirstName
+        includingNames
+        heroImages
+        salutationOverride
+        blurbOverride
       }
     }
   }
