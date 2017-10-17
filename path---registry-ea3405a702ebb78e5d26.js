@@ -1,0 +1,2 @@
+webpackJsonp([0xac9f5a19df1d],{716:function(e,t){e.exports={data:{sectionJson:{id:"registry",title:"Our Wedding Registry",imageUrl:"images/registry-header.jpg",blurb:"*Stay tuned! More details coming soon.*",subSections:null}},pathContext:{id:"registry"}}}});
+//# sourceMappingURL=path---registry-ea3405a702ebb78e5d26.js.map

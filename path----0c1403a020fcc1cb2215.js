@@ -1,2 +1,0 @@
-webpackJsonp([60335399758886],{198:function(t,o){t.exports={data:{header:{logo:{children:"May 27 2018",to:"/"},hashtag:{children:"#carozoffthemarket",href:"https://urlgeni.us/instagram/carozoffthemarket"},links:[{children:"location",to:"/location"},{children:"activities",to:"/activities"},{children:"wedding",to:"/wedding"},{children:"registry",to:"/registry"}]},footer:{logoUrl:"images/logo.png",text:"Made with ❤\nby Jonathan and Carolyn"}},layoutContext:{}}}});
-//# sourceMappingURL=path----0c1403a020fcc1cb2215.js.map
