@@ -46,6 +46,10 @@
 		h1,
 		em {
 			display: inline-block;
+			&:after {
+				content: '';
+				white-space: pre;
+			}
 		}
 		h1 {
 			margin-right: 2rem;
