@@ -12,6 +12,7 @@ class Section extends React.Component {
   render() {
     return (
       <section className={styles.section}>
+          {this.renderSubNavigation()}
           {this.renderImages()}
           <div className={styles.sectionContent}>
             {this.renderTitle()}
@@ -20,6 +21,24 @@ class Section extends React.Component {
           </div>
           {this.renderFacetContainer()}
       </section>
+    )
+  }
+  renderSubNavigation() {
+    const id = this.props.id
+    if (!this.props.subSections) {
+      return null
+    }
+    return (
+      <nav className={styles.subNavigation}>
+        {this.props.subSections.map((s,i) => this.renderSubNavigationLink(id, s, i))}
+      </nav>
+    )
+  }
+  renderSubNavigationLink(id, subSection, i) {
+    return (
+      <a key={`subsection-${i}`} href={`/${id}/#${subSection.id}`}>
+        {subSection.title}
+      </a>
     )
   }
   renderImages() {

@@ -16,6 +16,7 @@ export default SectionPageTemplate
 export const pageQuery = graphql`
   query SectionPageTemplateQuery($id: String = "") {
     sectionJson(id: { eq: $id }) {
+      id
       title
       imageUrl
       blurb
