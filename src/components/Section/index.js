@@ -104,9 +104,10 @@ class Section extends React.Component {
           names.push(customizations.additionFirstName)
         }
         if (customizations.includingNames) {
-          names.push(customizations.includingNames)
           if (customizations.includingNames.indexOf('and ') < 0) {
             names.push(`and ${customizations.includingNames}`)
+          } else {
+            names.push(customizations.includingNames)
           }
           suffix = names.join(', ')
         } else {
