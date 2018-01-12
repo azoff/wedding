@@ -32,6 +32,7 @@ export const pageQuery = graphql`
       edges {
         node {
           title
+          component
           imageUrl
           blurb
           link {
@@ -43,6 +44,8 @@ export const pageQuery = graphql`
             subtitle
             imageUrl
             fragment
+            link
+            blurb
           }
         }
       }

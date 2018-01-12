@@ -107,7 +107,41 @@
 	{
 		"id": "registry",
 		"title": "Our Wedding Registry",
-		"blurb": "*Stay tuned! More details coming soon.*",
-		"imageUrl": "images/registry-header.jpg"
+		"imageUrl": "images/registry-header.jpg",
+		"component": "RegistryFacets",
+		"facets": [
+			{
+				"title": "Heath Ceramics",
+				"subtitle": "Flatware, silverware and cutlery",
+				"fragment": "heath",
+				"imageUrl": "images/heath.png",
+				"blurb": "",
+				"link": "http://www.heathceramics.com/giftregistry/view/index/id/82224c6e18bbdcaa3fdf5f53c1d9d412/"
+			},
+			{
+				"title": "Macys",
+				"subtitle": "Kitchen appliances, home goods",
+				"fragment": "macys",
+				"imageUrl": "images/macys.png",
+				"blurb": "",
+				"link": "https://www.macys.com/wgl/registry/guest/2370403"
+			},
+			{
+				"title": "Williams Sonoma",
+				"subtitle": "Pots, pans and glassware",
+				"fragment": "williams+sonoma",
+				"imageUrl": "images/williams+sonoma.png",
+				"blurb": "",
+				"link": "https://www.williams-sonoma.com/registry/wggznxh58q/registry-list.html"
+			},
+			{
+				"title": "Zola",
+				"subtitle": "Trips, adventures and experiences",
+				"fragment": "zola",
+				"imageUrl": "images/zola.png",
+				"blurb": "",
+				"link": "https://www.zola.com/registry/carozoffthemarket"
+			}
+		]
 	}
 ]

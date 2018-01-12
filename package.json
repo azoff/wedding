@@ -35,7 +35,7 @@
     "deploy": "gh-pages -d public",
     "patch": "sed -i -e 's/if(c\\.initial) return;/if(!c||c.initial) return;/g' ./node_modules/extract-text-webpack-plugin/index.js",
     "build": "npm run patch && rm .cache public && gatsby build && cp -f CNAME ./public/CNAME",
-    "serve": "npm run build && gatsby serve",
+    "start": "npm run build && gatsby serve",
     "develop": "NODE_PATH=./src gatsby develop",
     "format": "prettier --trailing-comma es5 --no-semi --single-quote --write 'src/**/*.js'",
     "test": "echo \"Error: no test specified\" && exit 1"
