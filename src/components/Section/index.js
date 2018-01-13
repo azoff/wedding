@@ -7,6 +7,7 @@ import styles from './index.module.scss'
 import Slider from 'react-slick'
 import marked from 'marked'
 import LazyLoad from 'react-lazy-load'
+import RegistryFacets from 'components/RegistryFacets'
 
 class Section extends React.Component {
   render() {
@@ -19,7 +20,7 @@ class Section extends React.Component {
             {this.renderBlurb()}
             {this.renderLink()}
           </div>
-          {this.renderFacetContainer()}
+          {this.renderContentContainer()}
       </section>
     )
   }
@@ -125,6 +126,7 @@ class Section extends React.Component {
   renderBlurb() {
     const c = this.props.customizations
     const m = c && c.blurbOverride || this.props.blurb
+    if (!m) return
     const __html = marked(m)
     return <div rel="markdown" dangerouslySetInnerHTML={{ __html }} />
   }
@@ -133,8 +135,12 @@ class Section extends React.Component {
       return <Link className={styles.sectionLink} {...this.props.link} />
     }
   }
-  renderFacetContainer() {
-    if (this.props.facets) {
+  renderContentContainer() {
+    if (this.props.component === 'RegistryFacets') {
+      return (
+        <RegistryFacets {...this.props} />
+      )
+    } else if (this.props.facets) {
       return (
         <ul className={styles.facets}>
           {this.renderFacets()}

@@ -1,0 +1,33 @@
+@import '../../styles/colors';
+@import '../../styles/sizes';
+
+.registryFacets {
+  overflow: hidden;
+  margin-top: -40px;
+}
+
+.facet {
+  padding: 20px;
+  overflow: hidden;
+  float: left;
+  text-align: center;
+  img {
+    float: left;
+    max-height: 133px;
+    margin: 0;
+  }
+  h3 {
+    margin: 20px 0 20px 0;
+  }
+  a {
+    display: block;
+    line-height: 2;
+    cursor: pointer;
+  }
+  @media (max-width: $size-breakpoint-phablet) {
+    float: none;
+    img {
+      float: none;
+    }
+  }
+}

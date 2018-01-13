@@ -24,8 +24,10 @@ export const pageQuery = graphql`
         title
         subtitle
         imageUrl
+        imageSize
         id: fragment
         blurb
+        href
       }
     }
   }

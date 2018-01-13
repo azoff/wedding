@@ -43,6 +43,7 @@ export const pageQuery = graphql`
             subtitle
             imageUrl
             fragment
+            href
           }
         }
       }

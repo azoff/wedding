@@ -8,10 +8,16 @@ class SubSection extends React.Component {
   render() {
     const image = require(`../../${this.props.imageUrl}`)
     const style = { backgroundImage: `url("${image}")` }
+    if (this.props.imageSize) {
+      style.backgroundSize = this.props.imageSize
+    }
+    if (this.props.href) {
+      style.cursor = 'pointer'
+    }
     return (
       <div className={styles.subSection}>
         <div id={this.props.id} className={styles.subSectionAnchor} />
-        <figure style={style} />
+        <figure style={style} onClick={this.onFigureClick} />
         <aside>
           <h2>
             {this.props.title}
@@ -25,10 +31,20 @@ class SubSection extends React.Component {
       </div>
     )
   }
+  onFigureClick = e => {
+    if (this.props.href) {
+      window.location.href = this.props.href
+    }
+  }
   renderBlurb() {
     if (this.props.blurb) {
+      let blurb = this.props.blurb
+      if (this.props.href) {
+        blurb += ` \n\n[Browse  »](${this.props.href})`
+      }
+      const __html = marked(blurb)
       return (
-        <div rel="markdown" dangerouslySetInnerHTML={{ __html: marked(this.props.blurb) }} />
+        <div rel="markdown" dangerouslySetInnerHTML={{ __html  }} />
       )
     }
   }
@@ -49,6 +65,7 @@ SubSection.propTypes = {
   title: PropTypes.string.isRequired,
   subtitle: PropTypes.string.isRequired,
   imageUrl: PropTypes.string.isRequired,
+  imageSize: PropTypes.string,
   blurb: PropTypes.string,
   link: PropTypes.object,
   component: PropTypes.string,
