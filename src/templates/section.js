@@ -28,6 +28,7 @@ export const pageQuery = graphql`
         id: fragment
         blurb
         href
+        component
       }
     }
   }

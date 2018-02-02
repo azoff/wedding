@@ -5,8 +5,8 @@ import Link from 'gatsby-link'
 
 class RegistryFacets extends React.Component {
 
-	renderFacet = facet => (
-		<div className={styles.facet}>
+	renderFacet = (facet, i) => (
+		<div key={`registry-facet-${i}`} className={styles.facet}>
 			<img title={facet.title} alt={facet.title} src={require(`../../${facet.imageUrl}`)} />
 			<h3>{facet.title}</h3>
       <Link to={`/registry/#${facet.fragment}`}>Learn More »</Link>

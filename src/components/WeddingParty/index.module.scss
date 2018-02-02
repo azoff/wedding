@@ -1,0 +1,48 @@
+@import '../../styles/colors';
+@import '../../styles/sizes';
+
+.weddingParty {
+  h3, h4, h5 {
+    margin: 0;
+    clear: both;
+  }
+}
+
+.weddingPartyGroup {
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  h3 {
+    margin: 0 0 1em 0;
+  }
+  li {
+    margin: 0 0 3em 0;
+  }
+}
+
+.weddingPartyPerson {
+  h4 {
+    padding-top: 1em;
+  }
+  h5 {
+    padding: 1em 0;
+    font-weight: normal;
+    small {
+      font-style: italic;
+    }
+  }
+  img {
+    width: $size-iphone-6-width;
+    margin: 1em 1em 0 0;
+    float: left;
+  }
+  @media (max-width: $size-breakpoint-mobile) {
+    img {
+      width: 100%;
+      float: none;
+      margin: 0 0 1em 0;
+    }
+  }
+}

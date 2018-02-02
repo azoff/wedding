@@ -22,6 +22,28 @@ exports.modifyWebpackConfig = ({ config, stage }) => {
 exports.sourceNodes = ({ boundActionCreators }) => {
   const { createNode } = boundActionCreators
   return new Promise((resolve, reject) => {
+    const content = '{}'
+    const contentDigest = crypto.createHash('md5').update(content).digest('hex')
+    createNode({
+      slug: 'temp',
+      customizations: {
+        guestFirstName: '',
+        additionFirstName: '',
+        includingNames: '',
+        heroImages: [''],
+        salutationOverride: '',
+        blurbOverride: '',
+      },
+      id: `AirtableRecord.temp`,
+      parent: '__SOURCE__',
+      children: [],
+      internal: {
+        type: 'AirtableRecord',
+        contentDigest,
+        content
+      },
+    })
+    return resolve()
     base(tab).select({ view }).eachPage(function(records, next) {
 
         records.forEach(function(record) {

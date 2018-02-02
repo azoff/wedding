@@ -3,31 +3,40 @@ import PropTypes from 'prop-types'
 import Link from 'gatsby-link'
 import styles from './index.module.scss'
 import marked from 'marked'
+import WeddingParty from 'components/WeddingParty'
 
 class SubSection extends React.Component {
   render() {
     const image = require(`../../${this.props.imageUrl}`)
     const style = { backgroundImage: `url("${image}")` }
+    const contents = (
+      <div>
+        <h2>
+          {this.props.title}
+        </h2>
+        <h4>
+          {this.props.subtitle}
+        </h4>
+        {this.renderBlurb()}
+        {this.renderComponent()}
+      </div>
+    )
     if (this.props.imageSize) {
       style.backgroundSize = this.props.imageSize
     }
     if (this.props.href) {
       style.cursor = 'pointer'
     }
+    const wrapped = !this.props.component ? (
+      <div>
+        <figure style={style} onClick={this.onFigureClick} />
+        <aside>{contents}</aside>
+      </div>
+    ) : contents
     return (
       <div className={styles.subSection}>
         <div id={this.props.id} className={styles.subSectionAnchor} />
-        <figure style={style} onClick={this.onFigureClick} />
-        <aside>
-          <h2>
-            {this.props.title}
-          </h2>
-          <h4>
-            {this.props.subtitle}
-          </h4>
-          {this.renderBlurb()}
-          {this.renderComponent()}
-        </aside>
+        {wrapped}
       </div>
     )
   }
@@ -54,8 +63,8 @@ class SubSection extends React.Component {
     }
   }
   renderComponent() {
-    if (this.props.component) {
-      return require(`${this.props.component}`)
+    if (this.props.component === 'WeddingParty') {
+      return <WeddingParty />
     }
   }
 }

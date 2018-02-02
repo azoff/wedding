@@ -13,6 +13,15 @@
 
 	padding: 0 4rem 2.6rem;
 
+	&, aside {
+		h2 {
+			margin-bottom: 0.6rem;
+		}
+		& > div > h2, & > div > h4 {
+			text-transform: uppercase;
+		}
+	}
+
 	figure {
 		width: 40%;
 		padding-top: 40%;
@@ -24,13 +33,7 @@
 		width: 60%;
 		float: left;
 		padding: 0 0 0 4rem;
-		h2 {
-			margin-bottom: 0.6rem;
-		}
-		& > h2, & > h4 {
-			text-transform: uppercase;
-		}
-		& > a {
+		& > div > a {
 			float: right;
 		}
 	}
