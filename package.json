@@ -33,7 +33,7 @@
     "gatsby-source-filesystem": "^2.0.38",
     "gatsby-transformer-json": "^2.1.11",
     "gh-pages": "^2.0.1",
-    "lodash": "^4.17.13",
+    "lodash": "^4.17.21",
     "marked": "^0.6.2",
     "prettier": "^1.17.1",
     "react-lazy-load": "^3.0.13",
